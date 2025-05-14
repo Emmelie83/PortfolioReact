@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=PT+Sans&display=swap');
+
+@import "tailwindcss";
+
+body {
+  background-color: #10101A;
+  color: #E0E0E0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 19px;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #D3929F;
+}
+
+h1 {
+  font-size: 54px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 28px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0 0 1rem 0;
+}
