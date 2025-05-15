@@ -6,7 +6,7 @@ interface SkillItemProps {
 }
 
 const SkillItem: React.FC<SkillItemProps> = ({ icon, label }) => (
-	<li className="flex items-center gap-2 text-nowrap">
+	<li className="flex items-center gap-2 text-nowrap brightness-150">
 		<img src={`./icons/${icon}.svg`} alt={label} />
 		{label}
 	</li>

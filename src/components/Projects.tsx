@@ -43,8 +43,11 @@ const Project: React.FC<ProjectProps> = ({
 	techStack,
 	reverse,
 }) => (
-	<div className={`grid grid-cols-2 gap-8 my-10 ${reverse ? "rtl" : ""}`}>
-		<div className="ltr">
+	<div
+		className={`flex flex-col md:flex-row gap-8 my-10 ${
+			reverse ? "md:flex-row-reverse" : ""
+		}`}>
+		<div className="flex-1">
 			<div className="inline-block border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md">
 				<div className="rounded overflow-hidden bg-white border border-gray-200">
 					<img
@@ -55,12 +58,14 @@ const Project: React.FC<ProjectProps> = ({
 				</div>
 			</div>
 		</div>
-		<div className="ltr flex flex-col">
-			<h3>{title}</h3>
-			<p>{techStack}</p>
+
+		<div className="flex-1 flex flex-col text-left">
+			<h3 className="text-xl font-semibold">{title}</h3>
+			<p className="text-sm text-gray-700">{techStack}</p>
 		</div>
 	</div>
 );
+
 
 
 const Projects: React.FC = () => (
