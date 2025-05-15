@@ -4,16 +4,18 @@ interface TimelineItemProps {
 	date: string;
 	title: string;
 	company: string;
-	children?: React.ReactNode;
+	children: React.ReactNode;
+	defaultOpen?: boolean;
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
 	date,
 	title,
 	company,
-	children,
+  children,
+  defaultOpen=false,
 }) => {
-	const [open, setOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(defaultOpen);
 
 	return (
 		<div className="relative mb-6 pl-3 max-w-3/5 pt-3">
@@ -27,17 +29,17 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 			<div className="w-full max-w-xl ml-4">
 				<button
 					className={`leading-1 text-2xl mb-4 transition-transform ${
-						open ? "rotate-45" : ""
+						isOpen ? "rotate-45" : ""
 					}`}
-					aria-expanded={open}
-					onClick={() => setOpen(!open)}>
+					onClick={() => setIsOpen(!isOpen)}
+					aria-expanded={isOpen}>
 					+
 				</button>
 
 				{/* Toggle Content */}
 				<div
 					className={`transition-all overflow-hidden ${
-						open
+						isOpen
 							? "max-h-[1000px] opacity-100"
 							: "max-h-0 opacity-0"
 					}`}>

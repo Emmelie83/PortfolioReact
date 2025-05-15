@@ -13,7 +13,7 @@ const paragraphs = [
 
 const About: React.FC = () => {
 	return (
-		<section id="about" className="w-1/2">
+		<section id="about" className="w-2/3">
 			<h2>About Me</h2>
 			{paragraphs.map((text, index) => (
 				<p key={index} dangerouslySetInnerHTML={{ __html: text }} />

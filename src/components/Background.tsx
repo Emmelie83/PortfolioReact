@@ -12,7 +12,7 @@ const timelineData = [
 					Six-month traineeship focused on backend and DevOps
 					practices:
 				</p>
-				<ul className="mt-2 text-[16px] list-disc pl-6 leading-6">
+				<ul className="text-[17px] list-disc pl-6 leading-6">
 					<li>
 						Worked hands-on with Java and Spring Boot in a
 						microservices setup
@@ -33,12 +33,15 @@ const timelineData = [
 		title: "Fullstack Java Developer Program",
 		company: "IT-Högskolan, Gothenburg",
 		content: (
-			<p className="mt-2 text-[16px] pl-6 leading-6">
-				Two-year education focused on Java with Spring Boot, databases,
-				and software architecture principles such as SOLID and design
-				patterns. Built secure and scalable web applications and worked
-				in agile teams using Scrum and Kanban.
-			</p>
+			<>
+				<p>Two year vocational education including traineeship:</p>
+				<p className="text-[17px] leading-6">
+					Education focused on Java with Spring Boot, databases, and
+					software architecture principles such as SOLID and design
+					patterns. Built secure and scalable web applications and
+					worked in agile teams using Scrum and Kanban.
+				</p>
+			</>
 		),
 	},
 	{
@@ -51,7 +54,7 @@ const timelineData = [
 					Completed university-level courses alongside my Java
 					studies:
 				</p>
-				<ul className="mt-2 text-[16px] list-disc pl-6 leading-6">
+				<ul className="text-[17px] list-disc pl-6 leading-6">
 					<li>C – University of Gothenburg</li>
 					<li>
 						Python for Computer Linguists – University of Gothenburg
@@ -69,7 +72,7 @@ const timelineData = [
 		title: "Translator",
 		company: "Hunnebostrand, Brussels, Leipzig",
 		content: (
-			<ul className="mt-2 text-[16px] list-disc pl-6 leading-6">
+			<ul className="text-[17px] list-disc pl-6 leading-6">
 				<li>Translator/transcreator for Relaxdays GmbH in Leipzig</li>
 				<li>Freelance translator for the EU</li>
 				<li>
@@ -83,10 +86,14 @@ const timelineData = [
 		title: "MA in Translation Studies",
 		company: "Linnaeus University, Växjö",
 		content: (
-			<p className="mt-2 text-[16px] pl-6 leading-6">
-				Completed a Master’s degree in Translation Studies with a focus
-				on terminology management, CAT tools, and linguistic theory.
-			</p>
+			<>
+				<p>An MA in Translation Studies building on a BA in German:</p>
+				<p className="text-[17px] leading-6">
+					Completed a Master’s degree in Translation Studies with a
+					focus on translation from German and Swedish, CAT tools, and
+					linguistic theory. My master’s thesis can be found here.
+				</p>
+			</>
 		),
 	},
 ];
@@ -101,7 +108,8 @@ const Background: React.FC = () => {
 						key={index}
 						date={item.date}
 						title={item.title}
-						company={item.company}>
+						company={item.company}
+						defaultOpen={index === 0}>
 						{item.content}
 					</TimelineItem>
 				))}

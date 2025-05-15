@@ -43,7 +43,7 @@ const Skills: React.FC = () => {
 	return (
 		<section id="skills">
 			<h2>Skills</h2>
-			<div className="mt-22 grid grid-cols-4 gap-22">
+			<div className="mt-12 grid grid-cols-4 gap-22">
 				{skillCategories.map((category, index) => (
 					<ul key={index} className="space-y-6">
 						{category.map((skill) => (

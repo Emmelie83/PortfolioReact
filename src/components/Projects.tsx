@@ -71,7 +71,7 @@ const Project: React.FC<ProjectProps> = ({
 const Projects: React.FC = () => (
 	<section id="projects">
 		<h2>My Projects</h2>
-		<div>
+		<div className="mt-12">
 			{projects.map((project, index) => (
 				<Project key={index} {...project} />
 			))}
