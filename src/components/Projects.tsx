@@ -59,9 +59,9 @@ const Project: React.FC<ProjectProps> = ({
 			</div>
 		</div>
 
-		<div className="flex-1 flex flex-col text-left">
-			<h3 className="text-xl font-semibold">{title}</h3>
-			<p className="text-sm text-gray-700">{techStack}</p>
+		<div className="flex-1 flex flex-col">
+			<h3>{title}</h3>
+			<p>{techStack}</p>
 		</div>
 	</div>
 );

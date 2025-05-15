@@ -4,7 +4,7 @@ interface TimelineItemProps {
 	date: string;
 	title: string;
 	company: string;
-	children: React.ReactNode;
+	children?: React.ReactNode;
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
@@ -16,21 +16,32 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 	const [open, setOpen] = useState(false);
 
 	return (
-		<div className="timeline-item">
-			<p className="timeline-date">{date}</p>
-			<div className="timeline-content">
-				<h3>{title}</h3>
-				<p>{company}</p>
-				<div className="toggle-container">
-					<button
-						className={`toggle-button ${open ? "active" : ""}`}
-						aria-expanded={open}
-						onClick={() => setOpen(!open)}>
-						+
-					</button>
-					<div className={`toggle-content ${open ? "" : "hidden"}`}>
-						{children}
-					</div>
+		<div className="relative mb-6 pl-3 max-w-3/5 pt-3">
+			<div className="absolute left-[-1px] top-2 w-3 h-3 bg-[#585C64] rounded-full" />
+			<div className="ml-4">
+				<p className="font-bold text-lg leading-1">{date}</p>
+				<h3 className="background-title">{title}</h3>
+				<p className="leading-5">{company}</p>
+			</div>
+			{/* Toggle Button */}
+			<div className="w-full max-w-xl ml-4">
+				<button
+					className={`leading-1 text-2xl mb-4 transition-transform ${
+						open ? "rotate-45" : ""
+					}`}
+					aria-expanded={open}
+					onClick={() => setOpen(!open)}>
+					+
+				</button>
+
+				{/* Toggle Content */}
+				<div
+					className={`transition-all overflow-hidden ${
+						open
+							? "max-h-[1000px] opacity-100"
+							: "max-h-0 opacity-0"
+					}`}>
+					<div className="mb-4">{children}</div>
 				</div>
 			</div>
 		</div>

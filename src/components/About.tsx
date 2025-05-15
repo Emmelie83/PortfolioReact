@@ -1,5 +1,6 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
+import linkedinIcon from "../assets/icons/linkedin.svg";
 
 const paragraphs = [
 	"<strong>Tech moves fast — and I love trying to keep up.</strong>",
@@ -12,14 +13,14 @@ const paragraphs = [
 
 const About: React.FC = () => {
 	return (
-		<section id="about" className="w-3/5 space-y-4">
-			<h2 className="text-2xl font-heading mb-4">About Me</h2>
+		<section id="about" className="w-1/2">
+			<h2>About Me</h2>
 			{paragraphs.map((text, index) => (
 				<p key={index} dangerouslySetInnerHTML={{ __html: text }} />
 			))}
 			<SocialIcon
 				address="https://www.linkedin.com/in/emmeliejohansson/"
-				path="./icons/linkedin.svg"
+				path={linkedinIcon}
 				alt="LinkedIn Profile"
 			/>
 		</section>

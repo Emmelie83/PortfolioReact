@@ -6,8 +6,8 @@ interface SkillItemProps {
 }
 
 const SkillItem: React.FC<SkillItemProps> = ({ icon, label }) => (
-	<li className="flex items-center gap-2 text-nowrap brightness-150">
-		<img src={`./icons/${icon}.svg`} alt={label} />
+	<li className="flex items-center gap-3 text-nowrap brightness-150">
+		<img src={`../src/assets/icons/${icon}.svg`} alt={label} />
 		{label}
 	</li>
 );
@@ -42,8 +42,8 @@ const skillCategories = [
 const Skills: React.FC = () => {
 	return (
 		<section id="skills">
-			<h2 className="text-xl">Skills</h2>
-			<div className="mt-22 grid grid-cols-4 gap-42">
+			<h2>Skills</h2>
+			<div className="mt-22 grid grid-cols-4 gap-22">
 				{skillCategories.map((category, index) => (
 					<ul key={index} className="space-y-6">
 						{category.map((skill) => (

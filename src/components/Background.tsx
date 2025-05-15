@@ -4,7 +4,7 @@ import TimelineItem from "./TimelineItem";
 const timelineData = [
 	{
 		date: "2024–2025",
-		title: "Traineeship",
+		title: "Java Developer Traineeship",
 		company: "Finatix GmbH, Leipzig",
 		content: (
 			<>
@@ -12,7 +12,7 @@ const timelineData = [
 					Six-month traineeship focused on backend and DevOps
 					practices:
 				</p>
-				<ul className="custom-list">
+				<ul className="mt-2 text-[16px] list-disc pl-6 leading-6">
 					<li>
 						Worked hands-on with Java and Spring Boot in a
 						microservices setup
@@ -33,7 +33,7 @@ const timelineData = [
 		title: "Fullstack Java Developer Program",
 		company: "IT-Högskolan, Gothenburg",
 		content: (
-			<p>
+			<p className="mt-2 text-[16px] pl-6 leading-6">
 				Two-year education focused on Java with Spring Boot, databases,
 				and software architecture principles such as SOLID and design
 				patterns. Built secure and scalable web applications and worked
@@ -51,7 +51,7 @@ const timelineData = [
 					Completed university-level courses alongside my Java
 					studies:
 				</p>
-				<ul className="custom-list">
+				<ul className="mt-2 text-[16px] list-disc pl-6 leading-6">
 					<li>C – University of Gothenburg</li>
 					<li>
 						Python for Computer Linguists – University of Gothenburg
@@ -66,38 +66,16 @@ const timelineData = [
 	},
 	{
 		date: "2012–2022",
-		title: "Translator/Transcreator",
-		company: "Relaxdays, Leipzig",
+		title: "Translator",
+		company: "Hunnebostrand, Brussels, Leipzig",
 		content: (
-			<p>
-				Worked as an in-house translator creating localized product
-				content and marketing materials in English and Swedish.
-				Contributed to brand consistency and SEO optimization.
-			</p>
-		),
-	},
-	{
-		date: "2012–2013",
-		title: "Freelance Translator",
-		company: "Hunnebostrand, Sweden",
-		content: (
-			<p>
-				Provided freelance translation and editing services for clients
-				in e-commerce and publishing. Specialized in English to Swedish
-				localization.
-			</p>
-		),
-	},
-	{
-		date: "2012–2013",
-		title: "Translation Traineeship",
-		company: "European Commission, Brussels",
-		content: (
-			<p>
-				Participated in the European Commission's translation
-				traineeship program, translating official EU documents and
-				gaining experience in public sector communication.
-			</p>
+			<ul className="mt-2 text-[16px] list-disc pl-6 leading-6">
+				<li>Translator/transcreator for Relaxdays GmbH in Leipzig</li>
+				<li>Freelance translator for the EU</li>
+				<li>
+					Translation traineeship at the European Commission, Brussels
+				</li>
+			</ul>
 		),
 	},
 	{
@@ -105,7 +83,7 @@ const timelineData = [
 		title: "MA in Translation Studies",
 		company: "Linnaeus University, Växjö",
 		content: (
-			<p>
+			<p className="mt-2 text-[16px] pl-6 leading-6">
 				Completed a Master’s degree in Translation Studies with a focus
 				on terminology management, CAT tools, and linguistic theory.
 			</p>
@@ -117,7 +95,7 @@ const Background: React.FC = () => {
 	return (
 		<section>
 			<h2>Background</h2>
-			<div className="timeline-wrapper">
+			<div className="relative border-l-2 border-[#585C64] pl-6 space-y-12">
 				{timelineData.map((item, index) => (
 					<TimelineItem
 						key={index}

@@ -39,7 +39,7 @@ const NavBar: React.FC = () => {
 				id="navbar"
 				className={`flex gap-6 items-center justify-end py-4 px-4 text-lg uppercase ${
 					isSticky
-						? "fixed top-0 left-0 w-full shadow-md z-10 px-10 bg-[#101010] hover:bg-[#181828]"
+						? "fixed top-0 left-0 w-full shadow-md z-10 px-10 bg-[#10101A] hover:bg-[#181828]"
 						: ""
 				}`}>
 				<a href="#about" className="hover:brightness-75">
