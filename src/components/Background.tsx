@@ -115,7 +115,7 @@ const timelineData = [
 
 const Background: React.FC = () => {
 	return (
-		<section id="background">
+		<section>
 			<h2>Background</h2>
 			<div className="timeline-wrapper">
 				{timelineData.map((item, index) => (

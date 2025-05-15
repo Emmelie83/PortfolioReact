@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -10,7 +10,7 @@ const config: Config = {
       colors: {
         background: '#10101A',
         text: '#E0E0E0',
-        accent: '#D3929F',
+        accent: '#ff9ae0',
       },
       fontFamily: {
         sans: ['"PT Sans"', 'sans-serif'],
@@ -20,11 +20,11 @@ const config: Config = {
         profile: '0 10px 30px rgba(0, 0, 0, 0.6)',
       },
       borderRadius: {
-        sm: '4px',
+        md: '6px',
       },
     },
   },
   plugins: [],
 }
 
-export default config
+export default config;

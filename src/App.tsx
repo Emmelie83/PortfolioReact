@@ -4,18 +4,20 @@ import About from "./components/About";
 import Background from "./components/Background";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 
 const App: React.FC = () => {
 	return (
 		<div>
 			<Header />
-			<main className="">
+			<main className="max-w-screen-xl m-auto">
 				<About />
 				<Background />
-				<Skills />
+        <Skills />
+        <Projects />
 			</main>
-			<div className="w-3xl m-auto">
+			<div>
 				<Footer />
 			</div>
 		</div>

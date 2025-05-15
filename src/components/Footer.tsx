@@ -3,10 +3,10 @@ import SocialIcons from "./SocialIcons";
 
 const Footer: React.FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-4 mb-4">
+		<footer className="flex flex-col items-center gap-3 mb-4">
 			<p>Copyright © Emmelie Johansson 2025</p>
 			<SocialIcons />
-		</div>
+		</footer>
 	);
 };
 

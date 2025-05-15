@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Button from "./Button";
 
 const NavBar: React.FC = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -37,7 +38,7 @@ const NavBar: React.FC = () => {
 		<div className="mr-6">
 			<nav
 				id="navbar"
-				className={`flex gap-6 items-center justify-end py-6 px-4 text-lg uppercase text-[#E0E0E0] ${
+				className={`flex gap-6 items-center justify-end py-4 px-4 text-lg uppercase text- ${
 					isSticky
 						? "fixed top-0 left-0 w-full bg-[#10101A] shadow-md z-10 px-10"
 						: ""
@@ -54,12 +55,11 @@ const NavBar: React.FC = () => {
 				<a href="#projects" className="hover:brightness-75">
 					Projects
 				</a>
-				<a
-					id="contactButton"
-					href="#contact"
-					className="px-6 py-3 rounded bg-[#D3929F] text-[#10101A] border-none shadow-md hover:shadow-lg hover:brightness-125 hover:scale-110">
-					Contact
-				</a>
+				<Button
+					address="#contact"
+					buttontext="Contact"
+					variant="accent"
+				/>
 			</nav>
 		</div>
 	);

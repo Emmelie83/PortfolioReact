@@ -1,98 +1,59 @@
 import React from "react";
 
+interface SkillItemProps {
+	icon: string;
+	label: string;
+}
+
+const SkillItem: React.FC<SkillItemProps> = ({ icon, label }) => (
+	<li className="flex items-center gap-2 text-nowrap">
+		<img src={`./icons/${icon}.svg`} alt={label} />
+		{label}
+	</li>
+);
+
+const skillCategories = [
+	[
+		{ icon: "springboot", label: "Spring Boot" },
+		{ icon: "springsecurity", label: "Spring Security" },
+		{ icon: "maven", label: "Maven" },
+		{ icon: "gradle", label: "Gradle" },
+	],
+	[
+		{ icon: "html", label: "HTML" },
+		{ icon: "css", label: "CSS" },
+		{ icon: "vue", label: "Vue.js" },
+		{ icon: "thymeleaf", label: "Thymeleaf" },
+	],
+	[
+		{ icon: "docker", label: "Docker" },
+		{ icon: "junit", label: "JUnit" },
+		{ icon: "git", label: "Git" },
+		{ icon: "postman", label: "Postman" },
+	],
+	[
+		{ icon: "java", label: "Java" },
+		{ icon: "javascript", label: "Javascript" },
+		{ icon: "python", label: "Python" },
+		{ icon: "kotlin", label: "Kotlin" },
+	],
+];
+
 const Skills: React.FC = () => {
-  return (
-    <div id="skills">
-      <h2>Skills</h2>
-      <div className="skills-wrapper">
-        <div className="skill-category">
-          <ul>
-            <li>
-              <img src="./icons/springboot.svg" alt="Spring Boot" />
-              Spring Boot
-            </li>
-            <li>
-              <img
-                src="./icons/springsecurity.svg"
-                alt="Spring Security"
-              />
-              Spring Security
-            </li>
-            <li>
-              <img src="./icons/maven.svg" alt="Maven" />
-              Maven
-            </li>
-            <li>
-              <img src="./icons/gradle.svg" alt="Gradle" />
-              Gradle
-            </li>
-          </ul>
-        </div>
-
-        <div className="skill-category">
-          <ul>
-            <li>
-              <img src="./icons/html.svg" alt="HTML" />
-              HTML
-            </li>
-            <li>
-              <img src="./icons/css.svg" alt="CSS" />
-              CSS
-            </li>
-            <li>
-              <img src="./icons/vue.svg" alt="Vue.js" />
-              Vue.js
-            </li>
-            <li>
-              <img src="./icons/thymeleaf.svg" alt="Thymeleaf" />
-              Thymeleaf
-            </li>
-          </ul>
-        </div>
-
-        <div className="skill-category">
-          <ul>
-            <li>
-              <img src="./icons/docker.svg" alt="Docker" />
-              Docker
-            </li>
-            <li>
-              <img src="./icons/junit.svg" alt="JUnit" />
-              JUnit
-            </li>
-            <li>
-              <img src="./icons/git.svg" alt="Git" />
-              Git
-            </li>
-            <li>
-              <img src="./icons/postman.svg" alt="Postman" />
-              Postman
-            </li>
-          </ul>
-        </div>
-        <div className="skill-category">
-          <ul>
-            <li>
-              <img src="./icons/java.svg" alt="Java" />
-              Java
-            </li>
-            <li>
-              <img src="./icons/javascript.svg" alt="Javascript" />
-              Javascript
-            </li>
-            <li>
-              <img src="./icons/python.svg" alt="Python" />
-              Python
-            </li>
-            <li>
-              <img src="./icons/kotlin.svg" alt="Kotlin" />
-              Kotlin
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<section id="skills">
+			<h2 className="text-xl">Skills</h2>
+			<div className="mt-22 grid grid-cols-4 gap-42">
+				{skillCategories.map((category, index) => (
+					<ul key={index} className="space-y-6">
+						{category.map((skill) => (
+							<SkillItem key={skill.icon} {...skill} />
+						))}
+					</ul>
+				))}
+			</div>
+		</section>
+	);
 };
 
 export default Skills;
