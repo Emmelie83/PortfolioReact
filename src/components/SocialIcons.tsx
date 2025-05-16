@@ -27,4 +27,3 @@ const SocialIcons: React.FC = () => {
 };
 
 export default SocialIcons;
-

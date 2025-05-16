@@ -12,8 +12,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 	date,
 	title,
 	company,
-  children,
-  defaultOpen=false,
+	children,
+	defaultOpen = false,
 }) => {
 	const [isOpen, setIsOpen] = useState(defaultOpen);
 

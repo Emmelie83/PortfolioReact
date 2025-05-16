@@ -44,7 +44,7 @@ const Project: React.FC<ProjectProps> = ({
 	reverse,
 }) => (
 	<div
-		className={`flex flex-col md:flex-row gap-8 my-10 ${
+		className={`flex flex-col md:flex-row gap-10 my-10 ${
 			reverse ? "md:flex-row-reverse" : ""
 		}`}>
 		<div className="flex-1">
@@ -65,8 +65,6 @@ const Project: React.FC<ProjectProps> = ({
 		</div>
 	</div>
 );
-
-
 
 const Projects: React.FC = () => (
 	<section id="projects">
