@@ -18,7 +18,7 @@ const ContactForm: React.FC = () => {
 			{statusMessage.includes("Thank you") ? (
 				<ContactStatus message={statusMessage} success />
 			) : (
-				<form className="contact-form" onSubmit={handleSubmit}>
+				<form className="contact-form min-w-[400px]" onSubmit={handleSubmit}>
 					<div className="flex flex-col gap-4 flex-2">
 						<ContactInput
 							type="text"
