@@ -3,14 +3,11 @@ import ContactForm from "../components/ContactForm";
 
 const ContactSection: React.FC = () => {
 	return (
-		<section id="contact" className="my-20">
+		<section id="contact" className="my-40">
 			<h2>Get in touch</h2>
-			<div className="flex flex-col md:flex-row gap-20 md:justify-between">
+			<div className="flex flex-col md:flex-row gap-30 md:justify-between mt-20">
 				{/* Contact Info */}
-        <div className="w-1/2">
-          <p className="font-bold">
-            Let's connect
-          </p>
+				<div className="w-3/5">
 					<p className="mb-2">
 						Whether you’re interested in working together, have a
 						question about my work, or just want to say hello — I’d
@@ -19,7 +16,9 @@ const ContactSection: React.FC = () => {
 						mind.
 					</p>
 				</div>
-				<ContactForm />
+				<div className="w-2/5">
+					<ContactForm />
+				</div>
 			</div>
 		</section>
 	);

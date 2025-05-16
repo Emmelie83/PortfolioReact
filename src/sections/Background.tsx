@@ -70,15 +70,21 @@ const timelineData = [
 	{
 		date: "2012–2022",
 		title: "Translator",
-		company: "Hunnebostrand, Brussels, Leipzig",
+		company: "Leipzig, Hunnebostrand, Brussels",
 		content: (
-			<ul className="text-[17px] list-disc pl-6 leading-6">
-				<li>Translator/transcreator for Relaxdays GmbH in Leipzig</li>
-				<li>Freelance translator for the EU</li>
-				<li>
-					Translation traineeship at the European Commission, Brussels
-				</li>
-			</ul>
+			<>
+				<p>
+					I have over ten years of experience as a translator, both
+					freelance and in-house:
+				</p>
+				<ul className="text-[17px] list-disc pl-6 leading-6">
+					<li>
+						Translator and transcreator at Relaxdays GmbH
+					</li>
+					<li>Freelance translator for the European Union</li>
+					<li>Translation trainee at the European Commission</li>
+				</ul>
+			</>
 		),
 	},
 	{
@@ -102,7 +108,7 @@ const Background: React.FC = () => {
 	return (
 		<section>
 			<h2>Background</h2>
-			<div className="relative border-l-2 border-[#585C64] pl-6 space-y-12">
+			<div className="relative border-l-3 border-[#585C64] pl-6 space-y-12">
 				{timelineData.map((item, index) => (
 					<TimelineItem
 						key={index}
