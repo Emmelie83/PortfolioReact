@@ -1,6 +1,9 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
 import linkedinIcon from "../assets/icons/linkedin.svg";
+import NowSection from "./NowSection";
+
+
 
 const paragraphs = [
 	"<strong>Tech moves fast — and I love trying to keep up.</strong>",
@@ -12,16 +15,26 @@ const paragraphs = [
 
 const About: React.FC = () => {
 	return (
-		<section id="about" className="w-2/3">
+		<section id="about">
 			<h2>About Me</h2>
-			{paragraphs.map((text, index) => (
-				<p key={index} dangerouslySetInnerHTML={{ __html: text }} />
-			))}
-			<SocialIcon
-				address="https://www.linkedin.com/in/emmeliejohansson/"
-				path={linkedinIcon}
-				alt="LinkedIn Profile"
-			/>
+			<div className="flex gap-10">
+				<div className="w-2/3">
+					{paragraphs.map((text, index) => (
+						<p
+							key={index}
+							dangerouslySetInnerHTML={{ __html: text }}
+						/>
+					))}
+					<SocialIcon
+						address="https://www.linkedin.com/in/emmeliejohansson/"
+						path={linkedinIcon}
+						alt="LinkedIn Profile"
+					/>
+				</div>
+				<aside className="w-1/3">
+					<NowSection />
+				</aside>
+			</div>
 		</section>
 	);
 };

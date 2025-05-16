@@ -5,6 +5,7 @@ import Background from "./components/Background";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 
 const App: React.FC = () => {
@@ -16,6 +17,7 @@ const App: React.FC = () => {
 				<Background />
         <Skills />
         <Projects />
+        <Contact />
 			</main>
 			<div>
 				<Footer />

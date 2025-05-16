@@ -30,10 +30,13 @@ const Header: React.FC = () => {
 					<div className="flex gap-4 justify-center mt-4 md:justify-start">
 						<Button
 							address="#projects"
-							buttontext="See my projects"
+							buttontext="See what I’ve built"
 							variant="accent"
 						/>
-						<Button address="#contact" buttontext="Say Hi! 👋" />
+						<Button
+							address="#contact"
+							buttontext="Drop a Message"
+						/>
 					</div>
 
 					<SocialIcons />
