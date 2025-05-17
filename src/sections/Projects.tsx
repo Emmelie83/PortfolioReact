@@ -1,27 +1,21 @@
 import React from "react";
+import Project, { type ProjectProps } from "../components/Project";
 import scalacinema from "../assets/img/scalacinema.png";
 import messagesapp from "../assets/img/messagesapp.png";
 import onsight from "../assets/img/onsight.png";
 import rovarspraket from "../assets/img/rovarspraket.png";
 
-interface ProjectProps {
-	title: string;
-	image: string;
-	techStack: string;
-	reverse?: boolean;
-}
 
 const projects: ProjectProps[] = [
 	{
 		title: "Cinema ticket booking system",
 		image: scalacinema,
-		techStack:
-			"Java · Spring Boot · Spring Security · Vue.js · MongoDB · Docker",
+		techStack: "Java · Spring Boot · Spring Security · Vue.js · MongoDB",
 	},
 	{
 		title: "Messages app",
 		image: messagesapp,
-		techStack: "Java · Spring Boot · Thymeleaf · Swagger · MySQL · Docker",
+		techStack: "Java · Spring Boot · Thymeleaf · Swagger · MySQL",
 		reverse: true,
 	},
 	{
@@ -37,39 +31,10 @@ const projects: ProjectProps[] = [
 	},
 ];
 
-const Project: React.FC<ProjectProps> = ({
-	title,
-	image,
-	techStack,
-	reverse,
-}) => (
-	<div
-		className={`flex flex-col md:flex-row gap-10 my-20 ${
-			reverse ? "md:flex-row-reverse" : ""
-		}`}>
-		<div className="flex-1">
-			<div className="inline-block border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md">
-				<div className="rounded overflow-hidden bg-white border border-gray-200">
-					<img
-						src={image}
-						alt={`${title} Screenshot`}
-						className="w-full h-full object-cover block"
-					/>
-				</div>
-			</div>
-		</div>
-
-		<div className="flex-1 flex flex-col">
-			<h3>{title}</h3>
-			<p>{techStack}</p>
-		</div>
-	</div>
-);
-
 const Projects: React.FC = () => (
-	<section id="projects">
-		<h2>My Projects</h2>
-		<div className="mt-20">
+	<section id="projects" className="mx-auto px-8 lg:px-0 mb-20">
+		<h2 className="text-3xl md:text-5xl font-bold mb-6">My Projects</h2>
+		<div>
 			{projects.map((project, index) => (
 				<Project key={index} {...project} />
 			))}

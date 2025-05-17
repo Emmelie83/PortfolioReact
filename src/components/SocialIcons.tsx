@@ -6,7 +6,7 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 
 const SocialIcons: React.FC = () => {
 	return (
-		<div className="flex gap-6 py-6">
+		<div className="flex gap-6">
 			<SocialIcon
 				address="https://github.com/Emmelie83"
 				path={githubIcon}

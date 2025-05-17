@@ -18,12 +18,16 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 	const [isOpen, setIsOpen] = useState(defaultOpen);
 
 	return (
-		<div className="relative mb-6 pl-3 max-w-3/5 pt-3">
-			<div className="absolute left-[-1px] top-2 w-3 h-3 bg-[#585C64] rounded-full" />
-			<div className="ml-4">
-				<p className="font-bold text-lg leading-1">{date}</p>
-				<h3 className="background-title">{title}</h3>
-				<p className="leading-5">{company}</p>
+		<div className="relative mb-6 pl-2 md:pl-3 md:max-w-3/5 pt-3">
+			<div className="absolute left-[-1px] top-4 md:top-3 w-2 h-2 md:w-3 md:h-3 bg-[#585C64] rounded-full" />
+			<div className="mx-3 md:mx-4">
+				<p className="font-bold text-sm sm:text-lg leading-tight">
+					{date}
+				</p>
+				<h3 className="text-[16px] text-md leading-tight">{title}</h3>
+				<p className="text-sm font-semibold sm:text-lg leading-tight">
+					{company}
+				</p>
 			</div>
 			{/* Toggle Button */}
 			<div className="w-full max-w-xl ml-4">

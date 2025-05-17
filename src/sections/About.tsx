@@ -13,10 +13,15 @@ const paragraphs = [
 
 const About: React.FC = () => {
 	return (
-		<section id="about">
-			<h2>About Me</h2>
-			<div className="md:flex gap-10">
-				<div className="w-2/3">
+		<section
+			id="about"
+			className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
+			<h2 className="text-3xl md:text-5xl font-bold mb-6">
+				About Me
+			</h2>
+
+			<div className="flex flex-col lg:flex-row gap-10">
+				<div className="md:w-2/3 space-y-4 text-sm sm:text-lg leading-relaxed">
 					{paragraphs.map((text, index) => (
 						<p
 							key={index}
@@ -29,7 +34,8 @@ const About: React.FC = () => {
 						alt="LinkedIn Profile"
 					/>
 				</div>
-				<aside className="w-1/3">
+
+				<aside className="md:w-1/3">
 					<NowSection />
 				</aside>
 			</div>

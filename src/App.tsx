@@ -3,7 +3,7 @@ import Header from "./sections/Header";
 import About from "./sections/About";
 import Background from "./sections/Background";
 import Skills from "./sections/Skills";
-import Footer from "./components/Footer";
+import Footer from "./sections/Footer";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 

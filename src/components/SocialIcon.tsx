@@ -10,7 +10,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ address, path, alt }) => {
 	return (
 		<a href={address} target="_blank" rel="noopener noreferrer">
 			<img
-				className="transition duration-200 brightness-150 hover:brightness-175 hover:scale-120"
+				className="w-8 md:w-12 transition duration-200 brightness-150 hover:brightness-175 hover:scale-120"
 				src={path}
 				alt={alt}
 			/>

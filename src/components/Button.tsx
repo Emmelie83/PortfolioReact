@@ -4,7 +4,7 @@ interface ButtonProps {
 	address?: string;
 	buttontext: string;
 	variant?: "transparent" | "accent";
-	type?: "button" | "submit"; 
+	type?: "button" | "submit";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
 	type = "button",
 }) => {
 	const baseClasses =
-		"uppercase px-6 py-3 text-lg font-pt rounded-md cursor-pointer shadow-md hover:scale-110 hover:shadow-lg hover:brightness-125 transition duration-300";
+		"uppercase px-4 py-3 text-xs sm:text-sm md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer shadow-md hover:scale-110 hover:shadow-lg hover:brightness-125 transition duration-300";
 
 	const variantClasses =
 		variant === "accent"

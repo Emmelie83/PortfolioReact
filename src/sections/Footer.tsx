@@ -1,9 +1,9 @@
 import React from "react";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../components/SocialIcons";
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="flex flex-col items-center gap-3 mb-4">
+		<footer className="flex flex-col items-center gap-4 mb-8">
 			<p>Copyright © Emmelie Johansson 2025</p>
 			<SocialIcons />
 		</footer>

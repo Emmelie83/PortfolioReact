@@ -15,18 +15,7 @@ import postmanIcon from "../assets/icons/postman.svg";
 import figmaIcon from "../assets/icons/figma.svg";
 import tailwindIcon from "../assets/icons/tailwind.svg";
 import mysqlIcon from "../assets/icons/mysql.svg";
-
-interface SkillItemProps {
-	icon: string;
-	label: string;
-}
-
-const SkillItem: React.FC<SkillItemProps> = ({ icon, label }) => (
-	<li className="flex items-center gap-3 text-nowrap brightness-150">
-		<img src={icon} alt={label} />
-		{label}
-	</li>
-);
+import SkillItem from "../components/SkillItem";
 
 const skillCategories = [
 	[
@@ -57,9 +46,9 @@ const skillCategories = [
 
 const Skills: React.FC = () => {
 	return (
-		<section id="skills">
-			<h2>Skills</h2>
-			<div className="mt-12 grid grid-cols-4 gap-22">
+		<section id="skills" className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
+			<h2 className="text-3xl md:text-5xl font-bold mb-6">Skills</h2>
+			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 md:px-0 mt-14">
 				{skillCategories.map((category, index) => (
 					<ul key={index} className="space-y-6">
 						{category.map((skill) => (
