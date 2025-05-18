@@ -7,8 +7,24 @@ body {
   background-color: #10101A;
   color: #E0E0E0;
   font-family: 'PT Sans', sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   margin: 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 html {
@@ -25,6 +41,22 @@ h4 {
   color: #D3929F;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 strong {
   font-weight: 800;
 }
@@ -34,56 +66,55 @@ strong {
 }
 
 @media (min-width: 640px) {
-  /* Tailwind's sm breakpoint */
-}
-
-@media (min-width: 768px) {
-  /* Tailwind's md breakpoint */
-}
-
-@media (min-width: 1024px) {
-  /* Tailwind's lg breakpoint */
-}
-
-@media (min-width: 1280px) {
   h1 {
-    font-size: 54px;
-    margin: 0;
+    font-size: 34px;
   }
 
   h2 {
-    font-size: 48px;
-    margin-bottom: 2rem;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 28px;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 
   h4 {
     font-size: 20px;
-    margin: 0;
   }
-
-}
-
-
-
-@media (min-width: 1536px) {
-  /* Tailwind's 2xl breakpoint */
-}
-
-/* Optional: max-width queries */
-@media (max-width: 639px) {
-  /* below sm */
-}
-
-@media (max-width: 767px) {
-  /* below md */
-}
-
-@media (max-width: 1023px) {
-  /* below lg */
 }

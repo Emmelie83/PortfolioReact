@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 const ContactSection: React.FC = () => {
 	return (
 		<section id="contact" className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
-			<h2 className="text-3xl md:text-5xl font-bold mb-6">
+			<h2>
 				Get in touch
 			</h2>
 			<div className="flex flex-col md:flex-row gap-30 md:justify-between mt-20">

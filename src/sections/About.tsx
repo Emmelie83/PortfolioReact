@@ -16,12 +16,12 @@ const About: React.FC = () => {
 		<section
 			id="about"
 			className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
-			<h2 className="text-3xl md:text-5xl font-bold mb-6">
+			<h2>
 				About Me
 			</h2>
 
 			<div className="flex flex-col lg:flex-row gap-10">
-				<div className="md:w-2/3 space-y-4 text-sm sm:text-lg leading-relaxed">
+				<div className="md:w-2/3 space-y-4 leading-relaxed">
 					{paragraphs.map((text, index) => (
 						<p
 							key={index}

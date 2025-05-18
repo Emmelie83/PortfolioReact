@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 				{/* Text Section */}
 				<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-1/2">
 					<div>
-						<p className="text-lg sm:text-xl mt-10">Hi, I'm</p>
+						<p className="mt-10">Hi, I'm</p>
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl leading-tight">
 							Emmelie Johansson
 						</h1>

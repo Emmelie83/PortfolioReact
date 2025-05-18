@@ -111,7 +111,7 @@ const Background: React.FC = () => {
 		<section
 			id="background"
 			className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
-			<h2 className="text-3xl md:text-5xl font-bold mb-6">Background</h2>
+			<h2>Background</h2>
 
 			<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-4 sm:pl-6 space-y-12">
 				{timelineData.map((item, index) => (
