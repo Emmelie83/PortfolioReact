@@ -8,11 +8,11 @@ const timelineData = [
 		company: "Finatix GmbH, Leipzig",
 		content: (
 			<>
-				<p className="text-sm md:text-lg font-semibold mb-2">
+				<p className="mb-2">
 					Six-month traineeship focused on backend and DevOps
 					practices:
 				</p>
-				<ul className="text-sm md:text-lg list-disc pl-6 leading-relaxed">
+				<ul className="list-disc pl-6">
 					<li>
 						Worked hands-on with Java and Spring Boot in a
 						microservices setup
@@ -34,15 +34,20 @@ const timelineData = [
 		company: "IT-Högskolan, Gothenburg",
 		content: (
 			<>
-				<p className="text-sm md:text-lg font-semibold mb-2">
+				<p className="mb-2">
 					Two year vocational education including traineeship:
 				</p>
-				<p className="text-sm md:text-lg leading-relaxed">
-					Education focused on Java with Spring Boot, databases, and
-					software architecture principles such as SOLID and design
-					patterns. Built secure and scalable web applications and
-					worked in agile teams using Scrum and Kanban.
-				</p>
+				<ul className="list-disc pl-6">
+					<li>Java, OOP, Design Patterns & SOLID principles, CRUD</li>
+					<li>
+						operations with JDBC & JPA Web development with a focus
+						on
+					</li>
+					<li>
+						security & scalability Agile methodologies: Scrum &
+						Kanban
+					</li>
+				</ul>
 			</>
 		),
 	},
@@ -52,11 +57,11 @@ const timelineData = [
 		company: "University Courses, Sweden",
 		content: (
 			<>
-				<p className="text-sm md:text-lg font-semibold mb-2">
+				<p className="mb-2">
 					Completed university-level courses alongside my Java
 					studies:
 				</p>
-				<ul className="text-sm md:text-lg list-disc pl-6 leading-relaxed">
+				<ul className="list-disc pl-6">
 					<li>C – University of Gothenburg</li>
 					<li>
 						Python for Computer Linguists – University of Gothenburg
@@ -75,11 +80,11 @@ const timelineData = [
 		company: "Leipzig, Hunnebostrand, Brussels",
 		content: (
 			<>
-				<p className="text-sm md:text-lg font-semibold mb-2">
-					I have over ten years of experience as a translator, both
-					freelance and in-house:
+				<p className="mb-2">
+					Over ten years of experience as a translator, both freelance
+					and in-house:
 				</p>
-				<ul className="text-sm md:text-lg list-disc pl-6 leading-relaxed">
+				<ul className="list-disc pl-6">
 					<li>Translator and transcreator at Relaxdays GmbH</li>
 					<li>Freelance translator for the European Union</li>
 					<li>Translation trainee at the European Commission</li>
@@ -93,14 +98,14 @@ const timelineData = [
 		company: "Linnaeus University, Växjö",
 		content: (
 			<>
-				<p className="text-sm md:text-lg font-semibold mb-2">
+				<p className="mb-2">
 					An MA in Translation Studies building on a BA in German:
 				</p>
-				<p className="text-sm md:text-lg leading-relaxed">
-					Completed a Master’s degree in Translation Studies with a
-					focus on translation from German and Swedish, CAT tools, and
-					linguistic theory. My master’s thesis can be found here.
-				</p>
+				<ul className="list-disc pl-6">
+					<li>Translation from German</li>
+					<li>Translation Studies and linguistic theory</li>
+					<li>Swedish text theory and grammar</li>
+				</ul>
 			</>
 		),
 	},
@@ -113,7 +118,7 @@ const Background: React.FC = () => {
 			className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
 			<h2>Background</h2>
 
-			<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-4 sm:pl-6 space-y-12">
+			<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 space-y-12">
 				{timelineData.map((item, index) => (
 					<TimelineItem
 						key={index}

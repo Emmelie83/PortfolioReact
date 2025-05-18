@@ -20,8 +20,8 @@ const About: React.FC = () => {
 				About Me
 			</h2>
 
-			<div className="flex flex-col lg:flex-row gap-10">
-				<div className="md:w-2/3 space-y-4 leading-relaxed">
+			<div className="flex flex-col lg:flex-row gap-10 mb-10">
+				<div className="lg:w-2/3 space-y-4 leading-relaxed">
 					{paragraphs.map((text, index) => (
 						<p
 							key={index}
@@ -35,7 +35,7 @@ const About: React.FC = () => {
 					/>
 				</div>
 
-				<aside className="md:w-1/3">
+				<aside className="lg:w-1/3">
 					<NowSection />
 				</aside>
 			</div>

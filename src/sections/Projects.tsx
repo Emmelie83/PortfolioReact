@@ -34,7 +34,7 @@ const projects: ProjectProps[] = [
 const Projects: React.FC = () => (
 	<section id="projects" className="mx-auto px-8 lg:px-0 mb-20">
 		<h2>My Projects</h2>
-		<div>
+		<div className="mt-10">
 			{projects.map((project, index) => (
 				<Project key={index} {...project} />
 			))}

@@ -7,7 +7,7 @@ const ContactSection: React.FC = () => {
 			<h2>
 				Get in touch
 			</h2>
-			<div className="flex flex-col md:flex-row gap-30 md:justify-between mt-20">
+			<div className="flex flex-col md:flex-row gap-20 lg:gap-30 md:justify-between">
 				{/* Contact Info */}
 				<div className="md:w-1/2">
 					<p>info@emmeliejohansson.com</p>
