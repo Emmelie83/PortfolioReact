@@ -66,6 +66,10 @@ button {
   font-size: 11px;
 }
 
+#plus-sign {
+  font-size: 22px;
+}
+
 @media (min-width: 345px) {
 
   #button,

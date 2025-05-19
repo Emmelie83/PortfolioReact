@@ -30,9 +30,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 				</p>
 			</div>
 			
-			<div className="w-full max-w-xl ml-4">
-				<button
-					className={`leading-1 text-2xl mb-4 transition-transform ${
+			<div className="w-full ml-4">
+				<button id="plus-sign"
+					className={`leading-1 mb-4 transition-transform ${
 						isOpen ? "rotate-45" : ""
 					}`}
 					onClick={() => setIsOpen(!isOpen)}

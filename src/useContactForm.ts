@@ -1,63 +1,60 @@
 import { useState, useEffect } from "react";
+import HttpService from "./services/HttpService";
+import type { ContactFormData } from "./interfaces/ContactFormData";
 
 const useContactForm = () => {
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-	const [statusMessage, setStatusMessage] = useState("");
-	const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState<ContactFormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-	) => {
-		setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-	};
+  const [statusMessage, setStatusMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		setIsSubmitting(true);
-		setStatusMessage("");
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-		try {
-			const response = await fetch("/contact.php", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
-			});
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatusMessage("");
 
-			if (response.ok) {
-				setStatusMessage("Thank you! Your message has been sent.");
-				setFormData({ name: "", email: "", message: "" });
-			} else {
-				setStatusMessage("Oops! Something went wrong. Please try again.");
-			}
-		} catch {
-			setStatusMessage("Oops! Something went wrong. Please try again.");
-		} finally {
-			setIsSubmitting(false);
-		}
-	};
+    const result = await HttpService.request("/contact.php", "POST", formData);
 
-	useEffect(() => {
-		if (statusMessage.includes("Thank you")) {
-			const timer = setTimeout(() => {
-				setStatusMessage("");
-			}, 4000);
-			return () => clearTimeout(timer);
-		}
-	}, [statusMessage]);
+    const success = result !== null;
 
-	return {
-		formData,
-		handleChange,
-		handleSubmit,
-		isSubmitting,
-		statusMessage,
-	};
+    setStatusMessage(
+      success
+        ? "Thank you! Your message has been sent."
+        : "Oops! Something went wrong. Please try again."
+    );
+    setIsSubmitting(false);
+
+    if (success) {
+      setFormData({ name: "", email: "", message: "" });
+    }
+  };
+
+  useEffect(() => {
+    if (statusMessage.includes("Thank you")) {
+      const timer = setTimeout(() => {
+        setStatusMessage("");
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [statusMessage]);
+
+  return {
+    formData,
+    handleChange,
+    handleSubmit,
+    isSubmitting,
+    statusMessage,
+  };
 };
 
 export default useContactForm;

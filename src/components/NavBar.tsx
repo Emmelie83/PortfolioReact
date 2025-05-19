@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react"; // optional icons from lucide-react
+import { Menu, X } from "lucide-react";
 
 const NavBar: React.FC = () => {
 	const [isSticky, setIsSticky] = useState(false);
@@ -57,12 +57,11 @@ const NavBar: React.FC = () => {
 						? "fixed top-0 left-0 w-full shadow-md bg-[#10101A]"
 						: "relative"
 				}`}>
-				{/* Desktop nav */}
+				
 				<div className="hidden md:flex gap-6 items-center justify-end">
 					{navLinks}
 				</div>
 
-				{/* Hamburger Button */}
 				<div className="flex md:hidden justify-end">
 					<button
 						onClick={toggleMenu}
@@ -72,7 +71,6 @@ const NavBar: React.FC = () => {
 					</button>
 				</div>
 
-				{/* Mobile Menu */}
 				{menuOpen && (
 					<div className="flex flex-col mt-4 gap-4 md:hidden text-right">
 						{navLinks}
