@@ -15,7 +15,7 @@ const Project: React.FC<ProjectProps> = ({
 		className={`flex flex-col lg:flex-row lg:gap-10 mb-20 ${
 			reverse ? "lg:flex-row-reverse" : ""
 		}`}>
-		{/* Image Frame */}
+		
 		<div className="lg:w-1/2 mb-4 lg:mb-0">
 			<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
 				<div className="rounded overflow-hidden bg-white border border-gray-200">
@@ -28,7 +28,6 @@ const Project: React.FC<ProjectProps> = ({
 			</div>
 		</div>
 
-		{/* Text Content: Title + Tech Stack */}
 		<div className="order-1 md:order-2 lg:w-1/2 flex flex-col">
 			<h3>{title}</h3>
 			<p className="text-sm">

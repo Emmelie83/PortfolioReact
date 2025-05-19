@@ -8,23 +8,22 @@ const Header: React.FC = () => {
 	return (
 		<div>
 			<NavBar />
-			<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[90vh] gap-7 lg:gap-14 px-8 md:px-0 mt-10 mb-20 lg:my-0">
-				
+			<header className="flex flex-col lg:flex-row items-center justify-center lg:justify-start lg:pl-10 max-w-screen-lg mx-auto lg:h-[600px] gap-10 px-8 md:px-0 mt-10 lg:mt-0 mb-20 lg:mb-0">
 				<div>
 					<img
-						className="w-[200px] sm:w-[240px] md:w-[280px] lg:w-[300] rounded-md shadow-2xl"
+						className="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[260px] rounded-md shadow-4xl"
 						src={profilePicture}
 						alt="Profile picture of Emmelie Johansson"
 					/>
 				</div>
-				
-				<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-1/2">
+
+				<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
 					<div>
-						<p className="text-lg leading-tight">Hi, I'm</p>
-						<h1 className="leading-tight">
-							Emmelie Johansson
-						</h1>
-						<p className="text-lg leading-tight">
+						<p className="text-lg md:text-xl lg:text-xl leading-tight">
+							Hi, I'm
+						</p>
+						<h1 className="leading-tight">Emmelie Johansson</h1>
+						<p className="text-lg md:text-xl lg:text-xl leading-tight">
 							a full-stack Java developer based in Leipzig,
 							Germany
 						</p>

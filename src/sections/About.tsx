@@ -14,11 +14,8 @@ const paragraphs = [
 const About: React.FC = () => {
 	return (
 		<section
-			id="about"
-			className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
-			<h2>
-				About Me
-			</h2>
+			id="about">
+			<h2>About Me</h2>
 
 			<div className="flex flex-col lg:flex-row gap-10 mb-10">
 				<div className="lg:w-2/3 space-y-4 leading-relaxed">

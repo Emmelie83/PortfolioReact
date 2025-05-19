@@ -24,7 +24,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 				<p className="font-bold leading-tight">
 					{date}
 				</p>
-				<h3>{title}</h3>
+				<h4>{title}</h4>
 				<p className="font-semibold mb-1">
 					{company}
 				</p>

@@ -46,7 +46,8 @@ const skillCategories = [
 
 const Skills: React.FC = () => {
 	return (
-		<section id="skills" className="mx-auto px-8 lg:px-0 lg:py-12 mb-20">
+		<section
+			id="skills">
 			<h2>Skills</h2>
 			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 md:px-0 mt-10">
 				{skillCategories.map((category, index) => (

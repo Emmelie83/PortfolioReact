@@ -19,19 +19,34 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   color: #D3929F;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
 }
 
+
 h1 {
-  font-size: 32px;
+  font-size: 27px;
 }
 
 h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 26px;
+  margin-bottom: 2rem;
 }
 
 h3 {
-  font-size: 17px;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 5rem;
 }
 
 html {
@@ -46,13 +61,15 @@ strong {
   direction: rtl;
 }
 
-@media (min-width: 640px) {
-
-  body {
-    font-size: 19px;
-  }
+@media (min-width: 420px) {
   h1 {
-    font-size: 34px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 36px;
   }
 
   h2 {
@@ -60,14 +77,17 @@ strong {
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
+  h4 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   h2 {
@@ -75,21 +95,36 @@ strong {
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 26px;
   }
 
+  h4 {
+    font-size: 19px;
+  }
 }
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   h2 {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  section {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0; 
   }
 }
