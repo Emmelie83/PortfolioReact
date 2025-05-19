@@ -87,11 +87,19 @@ button {
     button {
       font-size: 13px;
     }
+
+        h1 {
+          font-size: 26px;
+        }
+    
+        h2 {
+          font-size: 25px;
+        }
   }
 
 @media (min-width: 376px) {
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   h2 {
