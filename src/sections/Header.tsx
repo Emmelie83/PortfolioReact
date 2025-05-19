@@ -8,10 +8,10 @@ const Header: React.FC = () => {
 	return (
 		<div>
 			<NavBar />
-			<header className="flex flex-col lg:flex-row items-center justify-center lg:justify-start lg:pl-14 max-w-screen-lg mx-auto lg:h-[600px] gap-10 px-8 md:px-0 mt-10 md:mt-20 md:mb-30 lg:mt-0 mb-20 lg:mb-0">
+			<header className="flex flex-col lg:flex-row items-center justify-center lg:pl-16 max-w-screen-lg mx-auto lg:h-[600px] gap-10 px-8 md:px-0 mt-10 md:mt-20 md:mb-30 lg:mt-0 mb-20 lg:mb-0">
 				<div>
 					<img
-						className="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[260px] rounded-md shadow-4xl md:mb-10 lg:mb-0"
+						className="w-[220px] sm:w-[260px] md:w-[320px] lg:w-[260px] rounded-md shadow-4xl md:mb-10 lg:mb-0"
 						src={profilePicture}
 						alt="Profile picture of Emmelie Johansson"
 					/>
