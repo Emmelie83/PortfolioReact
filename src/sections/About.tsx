@@ -13,11 +13,10 @@ const paragraphs = [
 
 const About: React.FC = () => {
 	return (
-		<section
-			id="about">
+		<section id="about">
 			<h2>About Me</h2>
 
-			<div className="flex flex-col lg:flex-row gap-10 mb-10">
+			<div className="flex flex-col lg:flex-row items-start gap-10 mb-10">
 				<div className="lg:w-2/3 space-y-4 leading-relaxed">
 					{paragraphs.map((text, index) => (
 						<p
@@ -32,9 +31,9 @@ const About: React.FC = () => {
 					/>
 				</div>
 
-				<aside className="lg:w-1/3">
+				<div className="lg:w-1/3 items-start">
 					<NowSection />
-				</aside>
+				</div>
 			</div>
 		</section>
 	);

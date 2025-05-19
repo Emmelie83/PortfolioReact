@@ -8,10 +8,10 @@ const Header: React.FC = () => {
 	return (
 		<div>
 			<NavBar />
-			<header className="flex flex-col lg:flex-row items-center justify-center lg:justify-start lg:pl-10 max-w-screen-lg mx-auto lg:h-[600px] gap-10 px-8 md:px-0 mt-10 lg:mt-0 mb-20 lg:mb-0">
+			<header className="flex flex-col lg:flex-row items-center justify-center lg:justify-start lg:pl-14 max-w-screen-lg mx-auto lg:h-[600px] gap-10 px-8 md:px-0 mt-10 md:mt-20 md:mb-30 lg:mt-0 mb-20 lg:mb-0">
 				<div>
 					<img
-						className="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[260px] rounded-md shadow-4xl"
+						className="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[260px] rounded-md shadow-4xl md:mb-10 lg:mb-0"
 						src={profilePicture}
 						alt="Profile picture of Emmelie Johansson"
 					/>
@@ -19,17 +19,17 @@ const Header: React.FC = () => {
 
 				<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
 					<div>
-						<p className="text-lg md:text-xl lg:text-xl leading-tight">
+						<p className="text-lg md:text-[22px] leading-tight">
 							Hi, I'm
 						</p>
 						<h1 className="leading-tight">Emmelie Johansson</h1>
-						<p className="text-lg md:text-xl lg:text-xl leading-tight">
+						<p className="text-lg md:text-[22px] leading-tight">
 							a full-stack Java developer based in Leipzig,
 							Germany
 						</p>
 					</div>
 
-					<div className="flex gap-4 lg:mt-4">
+					<div className="flex gap-2.5 md:gap-4 lg:my-3">
 						<Button
 							address="#projects"
 							buttontext="See what I’ve built"
