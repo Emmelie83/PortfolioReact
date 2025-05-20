@@ -1,22 +1,27 @@
+import Button from "./Button";
+
 export interface ProjectProps {
 	title: string;
 	image: string;
 	techStack: string;
-	reverse?: boolean;
+  reverse?: boolean;
+  address: string;
+  description?: string;
 }
 
 const Project: React.FC<ProjectProps> = ({
 	title,
 	image,
 	techStack,
-	reverse,
+  reverse,
+  address,
+  description,
 }) => (
 	<div
-		className={`flex flex-col lg:flex-row lg:gap-10 mb-20 ${
+		className={`flex flex-col lg:flex-row lg:gap-5 mb-20 ${
 			reverse ? "lg:flex-row-reverse" : ""
 		}`}>
-		
-		<div className="lg:w-1/2 mb-4 lg:mb-0">
+		<div className="lg:w-1/2 lg:pb-4 lg:mb-0">
 			<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
 				<div className="rounded overflow-hidden bg-white border border-gray-200">
 					<img
@@ -30,9 +35,11 @@ const Project: React.FC<ProjectProps> = ({
 
 		<div className="order-1 md:order-2 lg:w-1/2 flex flex-col">
 			<h3>{title}</h3>
-			<p className="text-sm sm:text-md lg:text-lg">
-				{techStack}
-			</p>
+      <p className="text-sm sm:text-md lg:text-xl mt-1">{techStack}</p>
+      <div className="mt-2 mb-1 w-2/3 lg:w-full">{description}</div>
+			<div className="flex gap-2.5 md:gap-4 my-3 ">
+				<Button address={address} buttontext="View on GitHub" />
+			</div>
 		</div>
 	</div>
 );

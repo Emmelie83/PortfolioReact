@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
 	type = "button",
 }) => {
 	const baseClasses =
-		"uppercase px-4 py-3 md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer shadow-md hover:scale-110 hover:shadow-lg hover:brightness-125 transition duration-300";
+		"inline-block uppercase px-4 py-3 md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer shadow-md hover:scale-110 hover:shadow-lg hover:brightness-125 transition duration-300";
 
 	const variantClasses =
 		variant === "accent"

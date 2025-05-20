@@ -19,26 +19,31 @@ const useContactForm = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setStatusMessage("");
+		e.preventDefault();
+		setIsSubmitting(true);
+		setStatusMessage("");
 
-    const result = await HttpService.request("/contact.php", "POST", formData);
+		const result = await HttpService.request(
+			"/contact.php",
+			"POST",
+			formData
+		);
+		const success = result !== null;
 
-    const success = result !== null;
+		setStatusMessage(
+			success
+				? "Thank you! Your message has been sent."
+				: "Oops! Something went wrong. Please try again."
+		);
 
-    setStatusMessage(
-      success
-        ? "Thank you! Your message has been sent."
-        : "Oops! Something went wrong. Please try again."
-    );
-    setIsSubmitting(false);
+		setIsSubmitting(false);
 
-    if (success) {
-      setFormData({ name: "", email: "", message: "" });
-    }
+		if (success) {
+			setFormData({ name: "", email: "", message: "" });
+		}
   };
 
+  
   useEffect(() => {
     if (statusMessage.includes("Thank you")) {
       const timer = setTimeout(() => {
