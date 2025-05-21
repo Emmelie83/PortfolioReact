@@ -47,9 +47,9 @@ const skillCategories = [
 const Skills: React.FC = () => {
 	return (
 		<section
-			id="skills">
+			id="skills" className="mb-20">
 			<h2>Skills</h2>
-			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 md:px-0 mt-10">
+			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 md:px-0 mt-10 ml-10 lg:ml-0">
 				{skillCategories.map((category, index) => (
 					<ul key={index} className="space-y-6">
 						{category.map((skill) => (

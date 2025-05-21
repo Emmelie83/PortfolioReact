@@ -65,10 +65,10 @@ const timelineData = [
 
 const Background: React.FC = () => {
 	return (
-		<section id="background">
+		<section id="background" className="mb-20">
 			<h2>Background</h2>
 
-			<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 space-y-12">
+			<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">
 				{timelineData.map((item, index) => (
 					<TimelineItem
 						key={index}

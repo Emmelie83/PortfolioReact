@@ -16,7 +16,7 @@ const About: React.FC = () => {
 		<section id="about">
 			<h2>About Me</h2>
 
-			<div className="flex flex-col lg:flex-row items-start gap-10 mb-10">
+			<div className="flex flex-col lg:flex-row items-start gap-10 my-10">
 				<div className="lg:w-2/3 space-y-4 leading-relaxed">
 					{paragraphs.map((text, index) => (
 						<p
