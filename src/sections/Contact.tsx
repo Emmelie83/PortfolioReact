@@ -10,9 +10,9 @@ const ContactSection: React.FC = () => {
 			
 				<div className="lg:w-1/2">
 					<p>info@emmeliejohansson.com</p>
-					<p>+49 151 677 25 898</p>
+					<p className="pt-1">+49 151 677 25 898</p>
 				</div>
-				<div className="sm:w-4/5 lg:w-1/2">
+				<div className="sm:w-4/5 lg:w-1/2 xl:w-2/3">
 					<ContactForm />
 				</div>
 			</div>
