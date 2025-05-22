@@ -1,24 +1,25 @@
 import { useState, useEffect } from "react";
 import HttpService from "./services/HttpService";
-import type { ContactFormData } from "./interfaces/types";
+import type { FormData } from "./interfaces/types";
 
 const useContactForm = () => {
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: "",
-    email: "",
-    message: "",
-  });
+	const [formData, setFormData] = useState<FormData>({
+		name: "",
+		email: "",
+		message: "",
+	});
 
-  const [statusMessage, setStatusMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
+	const [statusMessage, setStatusMessage] = useState("");
+	const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
+	const handleChange = (
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
+		const { name, value } = e.target;
+		setFormData((prev) => ({ ...prev, [name]: value }));
+	};
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setIsSubmitting(true);
 		setStatusMessage("");
@@ -41,25 +42,22 @@ const useContactForm = () => {
 		if (success) {
 			setFormData({ name: "", email: "", message: "" });
 		}
-  };
+	};
 
-  
-  useEffect(() => {
-    if (statusMessage.includes("Thank you")) {
-      const timer = setTimeout(() => {
-        setStatusMessage("");
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  }, [statusMessage]);
+	useEffect(() => {
+		if (statusMessage.includes("Thank you")) {
+			const timer = setTimeout(() => setStatusMessage(""), 4000);
+			return () => clearTimeout(timer);
+		}
+	}, [statusMessage]);
 
-  return {
-    formData,
-    handleChange,
-    handleSubmit,
-    isSubmitting,
-    statusMessage,
-  };
+	return {
+		formData,
+		handleChange,
+		handleSubmit,
+		isSubmitting,
+		statusMessage,
+	};
 };
 
 export default useContactForm;
