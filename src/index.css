@@ -8,6 +8,7 @@ body {
   color: #E0E0E0;
   font-family: 'PT Sans', sans-serif;
   font-size: 17px;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -195,6 +196,9 @@ strong {
 }
 
 @media (min-width: 768px) {
+  body {
+      font-size: 18px;
+    }
   h1 {
     font-size: 46px;
   }
@@ -221,7 +225,7 @@ strong {
 }
 
 @media (min-width: 1024px) {
-
+  
 
   h1 {
     font-size: 48px;
@@ -252,7 +256,7 @@ strong {
 @media (min-width: 1224px) {
 
   body {
-      font-size: 18px;
+      font-size: 19px;
     }
 
   h1 {
@@ -268,5 +272,9 @@ strong {
     font-size: 30px;
     margin-bottom: .5rem;
   }
+
+    #tech-stack {
+      font-size: 18px;
+    }
 
 }

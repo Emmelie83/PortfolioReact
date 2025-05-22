@@ -16,7 +16,7 @@ const About: React.FC = () => (
 		<h2>About Me</h2>
 
 		<div className="flex flex-col lg:flex-row gap-10 my-10">
-			<div className="md:w-4/5 lg:w-2/3 space-y-4 leading-relaxed">
+			<div className="md:w-9/10 lg:w-2/3 space-y-4">
 				{paragraphs.map((text, i) => (
 					<p key={i} dangerouslySetInnerHTML={{ __html: text }} />
 				))}
