@@ -52,7 +52,7 @@ const NavBar: React.FC = () => {
 		<div>
 			<nav
 				id="navbar"
-				className={`py-4 px-10 text-lg uppercase z-20 ${
+				className={`max-w-[2200px] py-4 px-10 text-lg uppercase z-20 ${
 					isSticky
 						? "fixed top-0 left-0 w-full shadow-md bg-[#10101A]"
 						: "relative"

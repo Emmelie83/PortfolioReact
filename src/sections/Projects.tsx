@@ -8,12 +8,12 @@ import rovarspraket from "../assets/img/rovarspraket.png";
 
 const projects: ProjectProps[] = [
 	{
-		title: "Cinema ticket booking system",
+		title: "Cinema booking system",
 		image: scalacinema,
 		techStack: "Java · Spring Boot · Vue.js · MongoDB · TMDB API",
 		address: "https://github.com/Emmelie83/CinemaGroupProject",
 		description:
-			"A group-built cinema booking web app with a Vue.js frontend and Spring Boot backend. Users can browse movies from The Movie Data Base (TMDB), select seats, and manage bookings through personal profiles. Admins can manage movies and schedules.",
+			"A group-built cinema ticket reservation web app with a Vue.js frontend and Spring Boot backend. Users can browse movies from The Movie Database (TMDB), select seats, and manage bookings via personal profiles. Admins can manage movie listings and schedules.",
 	},
 	{
 		title: "Messages app",

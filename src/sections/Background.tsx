@@ -4,7 +4,7 @@ import TimelineItem from "../components/TimelineItem";
 const timelineData = [
 	{
 		date: "2024–2025",
-		title: "Java Developer Traineeship",
+		title: "Developer Traineeship",
 		company: "Finatix GmbH, Leipzig",
 		content: [
 			"Worked hands-on with Java and Spring Boot in a microservices setup",
@@ -52,7 +52,7 @@ const timelineData = [
 	},
 	{
 		date: "2010–2012",
-		title: "MA in Translation Studies",
+		title: "MA in Translation",
 		company: "Linnaeus University, Växjö",
 		content: [
 			"Translation from German",
