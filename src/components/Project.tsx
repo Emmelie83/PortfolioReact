@@ -18,7 +18,7 @@ const Project: React.FC<ProjectProps> = ({
 	description,
 }) => (
 	<div
-		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-16 mb-20 md:w-9/10 lg:w-full ${
+		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-14 mb-20 ${
 			reverse ? "lg:flex-row-reverse" : ""
 		}`}>
 		<div className="lg:w-1/2 lg:pb-8 xl:pb-6">
@@ -35,8 +35,12 @@ const Project: React.FC<ProjectProps> = ({
 
 		<div className="order-1 md:order-2 lg:w-1/2 flex flex-col justify-center">
 			<h3>{title}</h3>
-			<p id="tech-stack" className="mt-1">{techStack}</p>
-			<div className="mt-2 md:mt-3 mb-1 lg:mb-2 lg:w-full lg:max-w-[800px] xl:w-9/10">{description}</div>
+			<p id="tech-stack" className="mt-1">
+				{techStack}
+			</p>
+			<div className="mt-2 md:mt-3 mb-1 lg:mb-2 lg:w-full lg:max-w-[800px] xl:w-9/10">
+				{description}
+			</div>
 			<div className="flex gap-2.5 md:gap-4 my-4 lg:mt-3 xl:mt-4">
 				<Button address={address} buttontext="View on GitHub" />
 			</div>
