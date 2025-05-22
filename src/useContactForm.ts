@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import HttpService from "./services/HttpService";
-import type { ContactFormData } from "./interfaces/ContactFormData";
+import type { ContactFormData } from "./interfaces/types";
 
 const useContactForm = () => {
   const [formData, setFormData] = useState<ContactFormData>({

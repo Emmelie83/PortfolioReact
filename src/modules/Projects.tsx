@@ -13,7 +13,7 @@ const projects: ProjectProps[] = [
 		techStack: "Java · Spring Boot · Vue.js · MongoDB · TMDB API",
 		address: "https://github.com/Emmelie83/CinemaGroupProject",
 		description:
-			"A group-built cinema ticket reservation web app with a Vue.js frontend and Spring Boot backend. Users can browse movies from The Movie Database (TMDB), select seats, and manage bookings via personal profiles. Admins can manage movie listings and schedules.",
+			"A group-built cinema ticket reservation app with a Vue.js frontend and Spring Boot backend. Users can browse movies, select seats, and manage bookings via personal profiles. Admins can fetch movies from The Movie Database (TMDB), and manage movie schedules.",
 	},
 	{
 		title: "Messages app",
@@ -27,21 +27,20 @@ const projects: ProjectProps[] = [
 	{
 		title: "Climbing trips website",
 		image: onsight,
-		techStack: "HTML · CSS · Javascript · Figma",
+		techStack: "HTML · CSS · JavaScript · Figma",
 		address: "https://github.com/Emmelie83/webbapp_labb1",
 	},
 	{
 		title: "Translation app",
 		image: rovarspraket,
-		techStack: "HTML · CSS · Javascript",
+		techStack: "HTML · CSS · JavaScript",
 		reverse: true,
 		address: "https://github.com/Emmelie83/RobberLanguage",
 	},
 ];
 
 const Projects: React.FC = () => (
-	<section
-		id="projects">
+	<section id="projects">
 		<h2>My Projects</h2>
 		<div className="mt-10">
 			{projects.map((project, index) => (

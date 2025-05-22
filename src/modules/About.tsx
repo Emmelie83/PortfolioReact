@@ -11,32 +11,27 @@ const paragraphs = [
 	"Outside of work, I like to stay active with bouldering, unwind in nature, and get absorbed in a good book. I also enjoy connecting with new people — so feel free to reach out on LinkedIn or drop me an email!",
 ];
 
-const About: React.FC = () => {
-	return (
-		<section id="about">
-			<h2>About Me</h2>
+const About: React.FC = () => (
+	<section id="about">
+		<h2>About Me</h2>
 
-			<div className="flex flex-col lg:flex-row items-start gap-10 my-10">
-				<div className="lg:w-2/3 space-y-4 leading-relaxed">
-					{paragraphs.map((text, index) => (
-						<p
-							key={index}
-							dangerouslySetInnerHTML={{ __html: text }}
-						/>
-					))}
-					<SocialIcon
-						address="https://www.linkedin.com/in/emmeliejohansson/"
-						path={linkedinIcon}
-						alt="LinkedIn Profile"
-					/>
-				</div>
-
-				<div className="lg:w-1/3 items-start">
-					<NowSection />
-				</div>
+		<div className="flex flex-col lg:flex-row gap-10 my-10">
+			<div className="md:w-4/5 lg:w-2/3 space-y-4 leading-relaxed">
+				{paragraphs.map((text, i) => (
+					<p key={i} dangerouslySetInnerHTML={{ __html: text }} />
+				))}
+				<SocialIcon
+					address="https://www.linkedin.com/in/emmeliejohansson/"
+					path={linkedinIcon}
+					alt="LinkedIn Profile"
+				/>
 			</div>
-		</section>
-	);
-};
+
+			<div className="lg:w-1/3">
+				<NowSection />
+			</div>
+		</div>
+	</section>
+);
 
 export default About;

@@ -1,9 +1,10 @@
 import React from "react";
+import type { FormFieldNames } from "../interfaces/types"; 
 
 type Props = {
 	as?: "input" | "textarea";
 	type?: string;
-	name: string;
+	name: FormFieldNames;
 	placeholder: string;
 	value: string;
 	onChange: (
