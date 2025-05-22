@@ -10,8 +10,10 @@ const projects: ProjectProps[] = [
 	{
 		title: "Cinema ticket booking system",
 		image: scalacinema,
-		techStack: "Java · Spring Boot · Vue.js · MongoDB",
+		techStack: "Java · Spring Boot · Vue.js · MongoDB · TMDB API",
 		address: "https://github.com/Emmelie83/CinemaGroupProject",
+		description:
+			"A group-built cinema booking web app with a Vue.js frontend and Spring Boot backend. Users can browse movies from The Movie Data Base (TMDB), select seats, and manage bookings through personal profiles. Admins can manage movies and schedules.",
 	},
 	{
 		title: "Messages app",

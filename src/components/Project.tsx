@@ -33,7 +33,7 @@ const Project: React.FC<ProjectProps> = ({
 			</div>
 		</div>
 
-		<div className="order-1 md:order-2 lg:w-1/2 flex flex-col">
+		<div className="order-1 md:order-2 lg:w-1/2 flex flex-col justify-center">
 			<h3>{title}</h3>
 			<p className=" sm:text-lg md:text-xl mt-1">{techStack}</p>
 			<div className="mt-2 lg:mt-3 mb-1 lg:mb-2 sm:w-2/3 lg:w-full lg:max-w-[800px] xl:w-4/5">{description}</div>
