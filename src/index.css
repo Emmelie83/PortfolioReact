@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Source+Sans+3:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Inter:wght@300;400&display=swap');
 
 @import "tailwindcss";
 
@@ -6,8 +8,9 @@
 body {
   background-color: #10101A;
   color: #E0E0E0;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 17px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.6;
   margin: 0;
 }
@@ -37,6 +40,7 @@ h2 {
 h3 {
   font-size: 18px;
   margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 h4 {
@@ -244,6 +248,13 @@ strong {
     font-size: 18px;
   }
 
+  
+    #tech-stack {
+      font-size: 18px;
+
+    }
+  
+
   section {
     padding-top: 8rem;
     margin-left: auto;
@@ -269,12 +280,16 @@ strong {
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: .5rem;
   }
 
+    h4 {
+      font-size: 20px;
+    }
+
     #tech-stack {
-      font-size: 18px;
+      font-size: 19px;
     }
 
 }
