@@ -1,79 +1,82 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const NavBar: React.FC = () => {
 	const [isSticky, setIsSticky] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
-	const navRef = useRef<HTMLElement | null>(null);
 
 	useEffect(() => {
+		const navbar = document.getElementById("navbar") as HTMLElement;
+		const getNavPos = () =>
+			navbar.getBoundingClientRect().top + window.scrollY;
+		let navPos = getNavPos();
+
 		const handleScroll = () => {
-			if (!navRef.current) return;
-			const navTop =
-				navRef.current.getBoundingClientRect().top + window.scrollY;
-			setIsSticky(window.scrollY > navTop);
+			const scrollPos = window.scrollY;
+			if (scrollPos > navPos && !isSticky) setIsSticky(true);
+			else if (scrollPos <= navPos && isSticky) setIsSticky(false);
 		};
 
 		window.addEventListener("scroll", handleScroll);
-		handleScroll();
+		window.addEventListener("load", () => (navPos = getNavPos()));
 
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("load", () => (navPos = getNavPos()));
 		};
-	}, []);
+	}, [isSticky]);
 
-	const toggleMenu = () => setMenuOpen((prev) => !prev);
+	const toggleMenu = () => setMenuOpen(!menuOpen);
 
-	const navLinks = [
-		{ href: "#about", label: "About" },
-		{ href: "#background", label: "Background" },
-		{ href: "#skills", label: "Skills" },
-		{ href: "#projects", label: "Projects" },
-		{ href: "#contact", label: "Contact" },
-	];
+	const navLinks = (
+		<>
+			<a href="#about" className="hover:brightness-75">
+				About
+			</a>
+			<a href="#background" className="hover:brightness-75">
+				Background
+			</a>
+			<a href="#skills" className="hover:brightness-75">
+				Skills
+			</a>
+			<a href="#projects" className="hover:brightness-75">
+				Projects
+			</a>
+			<a href="#contact" className="hover:brightness-75">
+				Contact
+			</a>
+		</>
+	);
 
 	return (
-		<nav
-			ref={navRef}
-			id="navbar"
-			className={`max-w-[2200px] py-4 px-10 text-lg uppercase z-20 ${
-				isSticky
-					? "fixed top-0 left-0 w-full shadow-md bg-[#10101A]"
-					: "relative"
-			}`}>
-			{/* Desktop links */}
-			<div className="hidden md:flex gap-6 items-center justify-end">
-				{navLinks.map(({ href, label }) => (
-					<a key={href} href={href} className="hover:brightness-75">
-						{label}
-					</a>
-				))}
-			</div>
-
-			{/* Mobile menu toggle */}
-			<div className="flex md:hidden justify-end">
-				<button
-					onClick={toggleMenu}
-					aria-label="Toggle menu"
-					className="text-white focus:outline-none">
-					{menuOpen ? <X size={28} /> : <Menu size={28} />}
-				</button>
-			</div>
-
-			{/* Mobile menu items */}
-			{menuOpen && (
-				<div className="flex flex-col mt-4 gap-4 md:hidden text-right">
-					{navLinks.map(({ href, label }) => (
-						<a
-							key={href}
-							href={href}
-							className="hover:brightness-75">
-							{label}
-						</a>
-					))}
+		<div>
+			<nav
+				id="navbar"
+				className={`h-16 transition-all duration-300 z-20 px-10 py-4 text-lg uppercase ${
+					isSticky
+						? "fixed top-0 left-0 w-full shadow-md bg-[#10101A]"
+						: "relative"
+				}`}>
+				<div className="hidden md:flex gap-6 items-center justify-end">
+					{navLinks}
 				</div>
-			)}
-		</nav>
+
+				<div className="flex md:hidden justify-end">
+					<button
+						onClick={toggleMenu}
+						aria-label="Toggle menu"
+						className="text-white focus:outline-none">
+						{menuOpen ? <X size={28} /> : <Menu size={28} />}
+					</button>
+				</div>
+
+				{menuOpen && (
+					<div className="flex flex-col mt-4 gap-4 md:hidden text-right">
+						{navLinks}
+					</div>
+				)}
+			</nav>
+		</div>
 	);
 };
 
