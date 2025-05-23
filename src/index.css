@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 16px;
 }
 
@@ -81,14 +81,19 @@ strong {
 }
 
 @media (min-width: 345px) {
+  h1 {
+      font-size: 26px; }
+}
+
+@media (min-width: 345px) {
 
 
   h1 {
-    font-size: 27px;
+    font-size: 28px;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   h3 {
