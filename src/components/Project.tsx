@@ -18,10 +18,10 @@ const Project: React.FC<ProjectProps> = ({
 	description,
 }) => (
 	<div
-		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-14 mb-20 ${
+		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-14 mb-20 md:w-3/4 lg:w-full ${
 			reverse ? "lg:flex-row-reverse" : ""
 		}`}>
-		<div className="lg:w-1/2 lg:pb-8 xl:pb-6">
+		<div className="lg:w-1/2 lg:pb-20 xl:pb-10">
 			<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
 				<div className="rounded overflow-hidden bg-white border border-gray-200">
 					<img

@@ -16,11 +16,11 @@ const Header: React.FC = () => (
 
 			<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
 				<div>
-					<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] leading-tight">
+					<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[24px] leading-tight">
 						Hi, I'm
 					</p>
 					<h1 className="leading-tight">Emmelie Johansson</h1>
-					<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] leading-tight">
+					<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[24px] leading-tight">
 						a full-stack Java developer based in Leipzig, Germany
 					</p>
 				</div>

@@ -16,13 +16,13 @@ const projects: ProjectProps[] = [
 			"A group-built cinema ticket reservation app with a Vue.js frontend and Spring Boot backend. Users can browse movies, select seats, and manage bookings via personal profiles. Admins can fetch movies from The Movie Database (TMDB), and manage movie schedules.",
 	},
 	{
-		title: "Messages app",
+		title: "Messages Forum App",
 		image: messagesapp,
 		techStack: "Java · Spring Boot · Thymeleaf · Swagger · MySQL",
 		reverse: true,
 		address: "https://github.com/Emmelie83/springBootGroupProject",
 		description:
-			"A group-built Spring Boot web app with GitHub OAuth2 login, user profile management, and message publishing. It includes public/private message visibility, a REST API, multilingual support (EN/SV) via external translation, and API documentation with Swagger.",
+			"A group-developed Spring Boot forum app with GitHub OAuth2 login. Features include public and private message visibility, multilingual support (EN/SV) via external translation, and API documentation powered by Swagger.",
 	},
 	{
 		title: "Climbing trips website",
