@@ -55,7 +55,7 @@ const NavBar: React.FC = () => {
 				className={`h-16 transition-all duration-300 z-20 text-lg p-2 bg-[#10101A] lg:hover:brightness-175 uppercase max-w-[2000px] ${
 					isSticky ? "fixed top-0 left-0 w-full" : "relative"
 				}`}>
-				<div className="hidden md:flex px-10 gap-6 items-center justify-end">
+				<div className="hidden md:flex px-10 pt-3 gap-6 items-center justify-end">
 					{navLinks}
 				</div>
 

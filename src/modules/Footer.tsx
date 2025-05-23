@@ -11,7 +11,6 @@ const Footer: React.FC = () => (
 			Copyright © Emmelie Johansson 2025
 		</p>
 		<SocialIcons />
-		<div className="flex justify-center mt-[-1rem]"></div>
 	</footer>
 );
 
