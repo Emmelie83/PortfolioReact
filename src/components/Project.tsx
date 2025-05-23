@@ -18,10 +18,10 @@ const Project: React.FC<ProjectProps> = ({
 	description,
 }) => (
 	<div
-		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-14 md:w-3/4 lg:w-full ${
+		className={`flex flex-col lg:flex-row lg:gap-5 xl:gap-10 md:w-3/4 lg:w-full bg-[#1A1A26] my-10 p-5 rounded-lg justify-center ${
 			reverse ? "lg:flex-row-reverse" : ""
-		}`}>
-		<div className="lg:w-1/2 lg:pb-20 xl:pb-10">
+		} items-center items-stretch`}>
+		<div className="lg:w-1/2">
 			<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
 				<div className="rounded overflow-hidden bg-white border border-gray-200">
 					<img
