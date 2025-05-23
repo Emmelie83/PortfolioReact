@@ -52,12 +52,10 @@ const NavBar: React.FC = () => {
 		<div>
 			<nav
 				id="navbar"
-				className={`h-16 transition-all duration-300 z-20 px-10 py-4 text-lg uppercase ${
-					isSticky
-						? "fixed top-0 left-0 w-full shadow-md bg-[#10101A]"
-						: "relative"
+				className={`h-16 transition-all duration-300 z-20 text-lg p-2 bg-[#10101A] lg:hover:brightness-175 uppercase ${
+					isSticky ? "fixed top-0 left-0 w-full" : "relative"
 				}`}>
-				<div className="hidden md:flex gap-6 items-center justify-end">
+				<div className="hidden md:flex px-10 gap-6 items-center justify-end">
 					{navLinks}
 				</div>
 
@@ -71,7 +69,7 @@ const NavBar: React.FC = () => {
 				</div>
 
 				{menuOpen && (
-					<div className="flex flex-col mt-4 gap-4 md:hidden text-right">
+					<div className="flex flex-col gap-3 px-10 md:hidden bg-[#10101A] text-right">
 						{navLinks}
 					</div>
 				)}
