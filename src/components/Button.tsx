@@ -5,6 +5,7 @@ interface ButtonProps {
 	buttontext: string;
 	variant?: "transparent" | "accent";
 	type?: "button" | "submit";
+	newTab?: boolean; // ← NEW prop
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -12,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
 	buttontext,
 	variant = "transparent",
 	type = "button",
+	newTab = false, // ← default false
 }) => {
 	const baseClasses =
 		"inline-block uppercase px-4 py-3 md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer shadow-md hover:scale-110 hover:shadow-lg hover:brightness-125 transition duration-300";
@@ -24,7 +26,11 @@ const Button: React.FC<ButtonProps> = ({
 	const className = `${baseClasses} ${variantClasses}`;
 
 	return address ? (
-		<a id="button" href={address} className={className}>
+		<a
+			id="button"
+			href={address}
+			className={className}
+			{...(newTab && { target: "_blank", rel: "noopener noreferrer" })}>
 			{buttontext}
 		</a>
 	) : (

@@ -42,7 +42,7 @@ const Project: React.FC<ProjectProps> = ({
 				{description}
 			</div>
 			<div className="flex gap-2.5 md:gap-4 my-4 lg:mt-3 xl:mt-4">
-				<Button address={address} buttontext="View on GitHub" />
+				<Button address={address} newTab buttontext="View on GitHub" />
 			</div>
 		</div>
 	</div>
