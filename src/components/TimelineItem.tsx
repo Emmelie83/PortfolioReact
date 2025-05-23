@@ -26,7 +26,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 				<p className="italic mb-1">{company}</p>
 			</div>
 
-			<div className="w-full ml-4">
+			<div className="w-full h-full ml-4">
 				<button
 					id="plus-sign"
 					className={`leading-1 mb-4 transition-transform ${
