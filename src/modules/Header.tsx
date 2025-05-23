@@ -8,7 +8,7 @@ import { ChevronsDown } from "lucide-react";
 const Header: React.FC = () => (
 	<div id="start">
 		<NavBar />
-		<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[500px] gap-10 px-4 md:px-14 lg:px-16 mt-10 md:mt-20 lg:mt-0 lg:mb-0">
+		<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[550px] gap-10 px-4 md:px-14 lg:px-16 mt-10 md:mt-20 lg:mt-0 mb-20 lg:mb-0">
 			<img
 				className="w-[220px] sm:w-[260px] md:w-[320px] lg:w-[260px] rounded-md shadow-4xl md:mb-10 lg:mb-0"
 				src={profilePicture}
@@ -38,8 +38,8 @@ const Header: React.FC = () => (
 				<SocialIcons />
 			</div>
 		</header>
-		<a href="#about" className="flex flex-col items-center text-accent">
-			<ChevronsDown size={40} strokeWidth={1.5} />
+		<a href="#about" className="hidden lg:flex flex-col items-center text-accent">
+			<ChevronsDown size={40} strokeWidth={1} />
 		</a>
 	</div>
 );
