@@ -12,26 +12,29 @@ const paragraphs = [
 ];
 
 const About: React.FC = () => (
-	<section id="about">
-		<h2>About Me</h2>
+	<div>
+		<section id="about">
+			<h2>About Me</h2>
 
-		<div className="flex flex-col lg:flex-row gap-10 mb-20 lg:mt-10">
-			<div className="md:w-9/10 lg:w-2/3 space-y-4">
-				{paragraphs.map((text, i) => (
-					<p key={i} dangerouslySetInnerHTML={{ __html: text }} />
-				))}
-				<SocialIcon
-					address="https://www.linkedin.com/in/emmeliejohansson/"
-					path={linkedinIcon}
-					alt="LinkedIn Profile"
-				/>
-			</div>
+			<div className="flex flex-col lg:flex-row gap-10 lg:mt-10">
+				<div className="md:w-9/10 lg:w-2/3 space-y-4">
+					{paragraphs.map((text, i) => (
+						<p key={i} dangerouslySetInnerHTML={{ __html: text }} />
+					))}
+					<SocialIcon
+						address="https://www.linkedin.com/in/emmeliejohansson/"
+						path={linkedinIcon}
+						alt="LinkedIn Profile"
+					/>
+				</div>
 
-			<div className="lg:w-1/3">
-				<NowSection />
+				<div className="lg:w-1/3">
+					<NowSection />
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+	</div>
 );
 
 export default About;

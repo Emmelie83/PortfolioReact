@@ -64,31 +64,34 @@ const timelineData = [
 ];
 
 const Background: React.FC = () => (
-	<section id="background" className="mb-20">
-		<h2>Background</h2>
+	<div>
+		<section id="background">
+			<h2>Background</h2>
 
-		<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">
-			{timelineData.map(
-				({ date, title, company, intro, content }, index) => (
-					<TimelineItem
-						key={index}
-						date={date}
-						title={title}
-						company={company}
-						defaultOpen={index === 0}>
-						<div>
-							<p className="mb-2 leading-tight">{intro}</p>
-							<ul className="list-disc pl-6 leading-relaxed">
-								{content.map((line, i) => (
-									<li key={i}>{line}</li>
-								))}
-							</ul>
-						</div>
-					</TimelineItem>
-				)
-			)}
-		</div>
-	</section>
+			<div className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">
+				{timelineData.map(
+					({ date, title, company, intro, content }, index) => (
+						<TimelineItem
+							key={index}
+							date={date}
+							title={title}
+							company={company}
+							defaultOpen={index === 0}>
+							<div>
+								<p className="mb-2 leading-tight">{intro}</p>
+								<ul className="list-disc pl-6 leading-relaxed">
+									{content.map((line, i) => (
+										<li key={i}>{line}</li>
+									))}
+								</ul>
+							</div>
+						</TimelineItem>
+					)
+				)}
+			</div>
+		</section>
+		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+	</div>
 );
 
 export default Background;

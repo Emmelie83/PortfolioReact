@@ -18,7 +18,7 @@ const Project: React.FC<ProjectProps> = ({
 	description,
 }) => (
 	<div
-		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-14 mb-20 md:w-3/4 lg:w-full ${
+		className={`flex flex-col lg:flex-row lg:gap-10 xl:gap-14 md:w-3/4 lg:w-full ${
 			reverse ? "lg:flex-row-reverse" : ""
 		}`}>
 		<div className="lg:w-1/2 lg:pb-20 xl:pb-10">

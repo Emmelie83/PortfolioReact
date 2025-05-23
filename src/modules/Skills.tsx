@@ -55,18 +55,21 @@ const skills = [
 ];
 
 const Skills: React.FC = () => (
-	<section id="skills" className="mb-20">
-		<h2>Skills</h2>
-		<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 mt-10 ml-10 lg:ml-0">
-			{skills.map((category, index) => (
-				<ul key={index} className="space-y-6">
-					{category.map((skill) => (
-						<SkillItem key={skill.label} {...skill} />
-					))}
-				</ul>
-			))}
-		</div>
-	</section>
+	<div>
+		<section id="skills">
+			<h2>Skills</h2>
+			<div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 mt-10 ml-10 lg:ml-0">
+				{skills.map((category, index) => (
+					<ul key={index} className="space-y-6">
+						{category.map((skill) => (
+							<SkillItem key={skill.label} {...skill} />
+						))}
+					</ul>
+				))}
+			</div>
+		</section>
+		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+	</div>
 );
 
 export default Skills;
