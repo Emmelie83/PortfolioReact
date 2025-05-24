@@ -20,7 +20,7 @@ const Project: React.FC<ProjectProps> = ({
 	<div
 		className={`flex flex-col lg:flex-row lg:gap-5 xl:gap-10 md:w-9/10 lg:w-full bg-[#1A1A26] my-10 p-2 md:p-4 lg:px-6 lg:py-8 rounded-xl justify-center ${
 			reverse ? "lg:flex-row-reverse" : ""
-		} lg:items-center`}>
+		} `}>
 		<div className="lg:w-1/2">
 			<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
 				<div className="rounded overflow-hidden bg-white border border-gray-200">
