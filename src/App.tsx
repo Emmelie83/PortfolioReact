@@ -11,7 +11,7 @@ const App: React.FC = () => {
 	return (
 		<div>
 			<Header />
-			<main className="max-w-screen-xl mx-auto sm:px-14 lg:px-16">
+			<main className="max-w-screen-xl mx-auto xs:px-4 sm:px-6 lg:px-16">
 				<About />
 				<Background />
 				<Skills />

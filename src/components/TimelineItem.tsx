@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Plus } from "lucide-react";
 
 interface TimelineItemProps {
 	date: string;
@@ -28,18 +29,21 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 
 			<div className="w-full h-full ml-4">
 				<button
-					id="plus-sign"
-					className={`leading-1 mb-4 transition-transform ${
-						isOpen ? "rotate-45" : ""
-					}`}
 					onClick={() => setIsOpen(!isOpen)}
-					aria-expanded={isOpen}>
-					+
+					aria-expanded={isOpen}
+					className="w-4 h-4 flex items-center justify-center transition-transform duration-300">
+					<Plus
+						className={`transition-transform my-3 duration-300 text-accent ${
+							isOpen ? "rotate-45" : ""
+						}`}
+						size={24}
+						strokeWidth={2}
+					/>
 				</button>
 
 				{/* Toggle Content */}
 				<div
-					className={`transition-all overflow-hidden ${
+					className={`transition-all mt-2 overflow-hidden ${
 						isOpen
 							? "max-h-[1000px] opacity-100"
 							: "max-h-0 opacity-0"

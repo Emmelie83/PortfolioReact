@@ -8,9 +8,9 @@ import { ChevronsDown } from "lucide-react";
 const Header: React.FC = () => (
 	<div id="start">
 		<NavBar />
-		<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[550px] gap-10 px-4 md:px-14 lg:px-16 mt-10 md:mt-20 lg:mt-0 mb-20 lg:mb-0">
+		<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[550px] gap-10 px-4 md:px-14 lg:px-16 mt-10 md:mt-20 lg:mt-0 mb-10 sm:mb-20 lg:mb-0">
 			<img
-				className="w-[220px] sm:w-[260px] md:w-[320px] lg:w-[260px] rounded-md shadow-4xl md:mb-10 lg:mb-0"
+				className="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[260px] rounded-md shadow-4xl"
 				src={profilePicture}
 				alt="Profile picture of Emmelie Johansson"
 			/>

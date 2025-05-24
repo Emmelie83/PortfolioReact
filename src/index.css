@@ -9,7 +9,7 @@ body {
   background-color: #10101A;
   color: #E0E0E0;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.7;
   margin: 0;
@@ -29,22 +29,22 @@ h4 {
 
 
 h1 {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 26px;
   margin-bottom: 16px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 1rem;
   margin-bottom: .5rem;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 button,
@@ -53,13 +53,13 @@ button,
 }
 
 #tech-stack {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 section {
   margin-left: auto;
   margin-right: auto;
-  padding: 3.5rem 2rem;
+  padding: 3.5rem 1rem;
 }
 
 html {
@@ -79,11 +79,6 @@ strong {
 }
 
 @media (min-width: 345px) {
-  h1 {
-      font-size: 26px; }
-}
-
-@media (min-width: 345px) {
 
 
   h1 {
@@ -91,11 +86,11 @@ strong {
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 28px;
   }
 
   h3 {
-    font-size: 21px;
+    font-size: 22px;
     margin-top: 1.5rem;
   }
 
@@ -104,7 +99,7 @@ strong {
   }
 
   #tech-stack {
-    font-size: 13px;
+    font-size: 14px;
   }
 
 
@@ -141,7 +136,7 @@ strong {
 
   h2 {
     font-size: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   h3 {
@@ -152,8 +147,7 @@ strong {
     font-size: 17px;
   }
 
-    section {
-      padding: 6rem 2rem; }
+    
 }
 
 @media (min-width: 460px) {
@@ -163,7 +157,12 @@ strong {
 
   h2 {
     font-size: 34px;
+    margin-bottom: 30px;
   }
+
+    section {
+      padding: 6rem 1.5rem;
+    }
 
 }
 
@@ -185,7 +184,7 @@ strong {
   }
 
     #tech-stack {
-      font-size: 17px;
+      font-size: 18px;
     }
 
 }
@@ -196,7 +195,8 @@ strong {
   }
 
   h2 {
-    font-size: 38px;
+    font-size: 40px;
+    margin-bottom: 40px;
   }
 
   h3 {
@@ -280,7 +280,6 @@ strong {
 
   h2 {
     font-size: 48px;
-    margin-top: 0;
   }
 
   h3 {
