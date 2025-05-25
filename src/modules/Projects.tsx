@@ -13,7 +13,7 @@ const projects: ProjectProps[] = [
 		techStack: "Java · Spring Boot · Vue.js · MongoDB · TMDB API",
 		address: "https://github.com/Emmelie83/CinemaGroupProject",
 		description:
-			"A group-built cinema ticket reservation app with a Vue.js frontend and Spring Boot backend. Users can browse movies, select seats, and manage bookings via personal profiles. Admins can fetch movies from The Movie Database (TMDB), and manage movie schedules.",
+			"A group-built cinema ticket reservation app. Users can browse movies, select seats, and manage bookings via personal profiles. Admins can fetch movies from The Movie Database (TMDB), and manage movie schedules.",
 	},
 	{
 		title: "Messages Forum App",
@@ -22,7 +22,7 @@ const projects: ProjectProps[] = [
 		reverse: true,
 		address: "https://github.com/Emmelie83/springBootGroupProject",
 		description:
-			"A group-developed Spring Boot forum app with GitHub OAuth2 login. Features include public and private message visibility, multilingual support (EN/SV) via external translation, and API documentation powered by Swagger.",
+			"A group-developed messages app with GitHub OAuth2 login. Features include public and private message visibility, multilingual support (EN/SV) via external translation, and API documentation powered by Swagger.",
 	},
 	{
 		title: "Climbing trips website",
