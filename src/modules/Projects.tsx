@@ -29,6 +29,7 @@ const projects: ProjectProps[] = [
 		image: onsight,
 		techStack: "HTML · CSS · JavaScript · Figma",
 		address: "https://github.com/Emmelie83/webbapp_labb1",
+		description: "Description coming soon.",
 	},
 	{
 		title: "Translation app",
@@ -36,6 +37,7 @@ const projects: ProjectProps[] = [
 		techStack: "HTML · CSS · JavaScript",
 		reverse: true,
 		address: "https://github.com/Emmelie83/RobberLanguage",
+		description: "Description coming soon.",
 	},
 ];
 
