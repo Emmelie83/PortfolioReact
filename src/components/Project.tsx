@@ -18,7 +18,7 @@ const Project: React.FC<ProjectProps> = ({
 	description,
 }) => (
 	<div
-		className={`flex flex-col lg:flex-row lg:gap-5 xl:gap-10 md:w-3/4 lg:w-full bg-[#1F1F2E] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center bg-brightness-125 ${
+		className={`flex flex-col lg:flex-row lg:gap-5 xl:gap-10 md:w-3/4 lg:w-full bg-[#1D1D2A] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center bg-brightness-125 ${
 			reverse ? "lg:flex-row-reverse" : ""
 		} `}>
 		<div className="lg:w-1/2 lg:py-1 xl:py-0">
