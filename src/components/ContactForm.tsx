@@ -53,7 +53,7 @@ const ContactForm: React.FC = () => {
 						<div className="self-end">
 							<Button
 								buttontext={
-									isSubmitting ? "Sending..." : "Submit"
+									isSubmitting ? "Sending..." : "Send Message"
 								}
 								type="submit"
 								variant="transparent"

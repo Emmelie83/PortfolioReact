@@ -28,7 +28,7 @@ const timelineData = [
 	{
 		date: "2022–2024",
 		title: "Developer Courses",
-		company: "Universities, Sweden",
+		company: "Various universities in Sweden",
 		intro: "Completed university-level courses alongside my Java studies:",
 		content: [
 			"C – University of Gothenburg",
@@ -52,9 +52,9 @@ const timelineData = [
 	},
 	{
 		date: "2010–2012",
-		title: "MA in Translation",
+		title: "Master’s in Translation",
 		company: "Linnaeus University, Växjö",
-		intro: "An MA in Translation Studies building on a BA in German:",
+		intro: "An M.A. in Translation Studies building on a B.A. in German:",
 		content: [
 			"Translation from German",
 			"Translation Studies and linguistic theory",
