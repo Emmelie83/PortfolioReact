@@ -28,21 +28,36 @@ const NavBar: React.FC = () => {
 
 	const toggleMenu = () => setMenuOpen(!menuOpen);
 
-	const navLinks = (
+	const navLinks = (onLinkClick?: () => void) => (
 		<>
-			<a href="#about" className="hover:brightness-75">
+			<a
+				href="#about"
+				className="hover:brightness-75"
+				onClick={onLinkClick}>
 				About
 			</a>
-			<a href="#background" className="hover:brightness-75">
+			<a
+				href="#background"
+				className="hover:brightness-75"
+				onClick={onLinkClick}>
 				Background
 			</a>
-			<a href="#skills" className="hover:brightness-75">
+			<a
+				href="#skills"
+				className="hover:brightness-75"
+				onClick={onLinkClick}>
 				Skills
 			</a>
-			<a href="#projects" className="hover:brightness-75">
+			<a
+				href="#projects"
+				className="hover:brightness-75"
+				onClick={onLinkClick}>
 				Projects
 			</a>
-			<a href="#contact" className="hover:brightness-75">
+			<a
+				href="#contact"
+				className="hover:brightness-75"
+				onClick={onLinkClick}>
 				Contact
 			</a>
 		</>
@@ -56,21 +71,21 @@ const NavBar: React.FC = () => {
 					isSticky ? "fixed top-0 left-0 w-full" : "relative"
 				}`}>
 				<div className="hidden md:flex px-10 pt-3 gap-6 items-center justify-end">
-					{navLinks}
+					{navLinks()}
 				</div>
 
-				<div className="flex md:hidden justify-end">
+				<div className="flex md:hidden justify-end p-3">
 					<button
 						onClick={toggleMenu}
 						aria-label="Toggle menu"
 						className="text-white focus:outline-none">
-						{menuOpen ? <X size={28} /> : <Menu size={28} />}
+						{menuOpen ? <X size={30} /> : <Menu size={30} />}
 					</button>
 				</div>
 
 				{menuOpen && (
-					<div className="flex flex-col gap-3 px-10 md:hidden bg-[#10101A] text-right">
-						{navLinks}
+					<div className="flex flex-col gap-3 px-10 pb-10 md:hidden bg-[#10101A] text-right">
+						{navLinks(() => setMenuOpen(false))}
 					</div>
 				)}
 			</nav>
