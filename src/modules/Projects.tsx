@@ -27,17 +27,19 @@ const projects: ProjectProps[] = [
 	{
 		title: "Climbing trips website",
 		image: onsight,
-		techStack: "HTML · CSS · JavaScript · Figma",
+		techStack: "HTML · CSS · JavaScript · Figma · Weather API",
 		address: "https://github.com/Emmelie83/webbapp_labb1",
-		description: "Description coming soon.",
+		description:
+			"A responsive website for planning and showcasing climbing trips. Designed in Figma and built with vanilla HTML, CSS, and JavaScript, it features dynamic weather data integration via a public Weather API.",
 	},
 	{
 		title: "Translation app",
 		image: rovarspraket,
-		techStack: "HTML · CSS · JavaScript",
+		techStack: "React · Vite · TypeScript · Tailwind",
 		reverse: true,
-		address: "https://github.com/Emmelie83/RobberLanguage",
-		description: "Description coming soon.",
+		address: "https://github.com/Emmelie83/RobberLanguageTranslator",
+		description:
+			"What began as my very first JavaScript project is now evolving into a modern, fully rebuilt application using React, TypeScript, Vite, and Tailwind CSS. The new version is currently in development and will be live soon.",
 	},
 ];
 
