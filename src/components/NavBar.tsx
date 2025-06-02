@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
 					<a
 						key={section}
 						href={`#${section}`}
-						className="hover:brightness-50"
+						className="hover:underline underline-offset-8"
 						onClick={onLinkClick}>
 						{section.charAt(0).toUpperCase() + section.slice(1)}
 					</a>
@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
 	return (
 		<nav
 			id="navbar"
-			className="fixed top-0 left-0 w-full z-20 bg-[#10101A] lg:hover:brightness-175 uppercase max-w-[2000px] text-lg p-2 shadow-md">
+			className="fixed top-0 left-0 w-full z-20 bg-[#10101A] lg:hover:brightness-175 max-w-[2000px] text-lg p-2 shadow-md">
 			{/* Desktop nav */}
 			<div className="hidden md:flex px-10 py-3 gap-6 items-center justify-end uppercase">
 				{navLinks()}

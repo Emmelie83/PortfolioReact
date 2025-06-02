@@ -16,8 +16,8 @@ const About: React.FC = () => (
 		<section id="about">
 			<h2>About Me</h2>
 
-			<div className="flex flex-col lg:flex-row gap-10 lg:mt-10">
-				<div className="md:w-9/10 lg:w-2/3 space-y-4">
+			<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between lg:mt-10">
+				<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
 					{paragraphs.map((text, i) => (
 						<p key={i} dangerouslySetInnerHTML={{ __html: text }} />
 					))}
