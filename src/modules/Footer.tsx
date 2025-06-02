@@ -2,16 +2,18 @@ import React from "react";
 import SocialIcons from "../components/SocialIcons";
 import { ChevronsUp } from "lucide-react";
 
-const Footer: React.FC = () => (
+const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
+  return (
 	<footer className="flex flex-col items-center gap-4 my-10">
 		<a href="#start" className="flex flex-col items-center text-accent">
 			<ChevronsUp size={40} strokeWidth={1} />
 		</a>
 		<p className="text-sm lg:text-md mb-4">
-			Copyright © Emmelie Johansson 2025
+			Copyright © Emmelie Johansson {year}
 		</p>
 		<SocialIcons />
 	</footer>
-);
+)};
 
 export default Footer;

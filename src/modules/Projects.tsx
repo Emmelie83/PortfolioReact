@@ -39,7 +39,7 @@ const projects: ProjectProps[] = [
 		reverse: true,
 		address: "https://github.com/Emmelie83/RobberLanguageTranslator",
 		description:
-			"What began as my very first JavaScript project is now evolving into a modern, fully rebuilt application using React, TypeScript, Vite, and Tailwind CSS. The new version is currently in development and will be live soon.",
+			"I built this as my first JavaScript project — now I'm revamping it using React and TypeScript to showcase my current skillset. The new version is currently in development and will be live soon.",
 	},
 ];
 
