@@ -23,6 +23,7 @@ const timelineData = [
 			"Java, OOP, Design Patterns & SOLID principles, CRUD operations with JDBC & JPA",
 			"Web development with a focus on security & scalability",
 			"Agile methodologies: Scrum & Kanban",
+			"Spring Boot, Docker, Git, Vue.js",
 		],
 	},
 	{
@@ -35,6 +36,7 @@ const timelineData = [
 			"Python for Computer Linguists – University of Gothenburg",
 			"Python – Chalmers University of Technology",
 			"Web Design – University West",
+			"UX Design – University West",
 			"Databases – Luleå University of Technology",
 			"Java – Luleå University of Technology",
 		],
