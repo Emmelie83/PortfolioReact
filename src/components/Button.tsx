@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
 
 	const variantClasses = {
 		accent: "bg-[#D3929F] text-[#10101A] border lg:border-2 border-[#D3929F]",
-		transparent: "bg-[#10101A] border lg:border-2 hover:brightness-175",
+		transparent: "border lg:border-2 hover:brightness-175",
 	}[variant];
 
 	const className = `${baseClasses} ${variantClasses}`;
