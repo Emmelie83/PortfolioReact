@@ -3,7 +3,6 @@ import SocialIcons from "../components/SocialIcons";
 import NavBar from "../components/NavBar";
 import profilePicture from "../assets/img/profile-picture.jpg";
 import Button from "../components/Button";
-import { ChevronsDown } from "lucide-react";
 
 const Header: React.FC = () => (
 	<div id="start">
@@ -38,9 +37,7 @@ const Header: React.FC = () => (
 				<SocialIcons />
 			</div>
 		</header>
-		<a href="#about" className="hidden lg:flex flex-col items-center text-accent">
-			<ChevronsDown size={40} strokeWidth={1} />
-		</a>
+		
 	</div>
 );
 
