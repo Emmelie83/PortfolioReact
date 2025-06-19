@@ -1,8 +1,7 @@
-import React from "react";
 import SocialIcons from "../components/SocialIcons";
 import { ChevronsUp } from "lucide-react";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   const year = new Date().getFullYear();
   return (
 		<footer className="flex flex-col items-center gap-4 my-10">
@@ -14,6 +13,5 @@ const Footer: React.FC = () => {
 			</p>
 			<SocialIcons />
 		</footer>
-  );};
-
-export default Footer;
+  )
+}
