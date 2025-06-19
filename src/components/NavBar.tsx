@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
 	return (
 		<nav
 			id="navbar"
-			className="fixed top-0 left-0 w-full z-20 bg-[#10101A] lg:hover:brightness-175 max-w-[2000px] text-lg p-2 shadow-md">
+			className="fixed font-light top-0 left-0 w-full z-20 bg-[#10101A] text-white lg:hover:brightness-175 max-w-[2000px] text-lg p-2 shadow-md">
 			{/* Desktop nav */}
 			<div className="hidden md:flex px-10 py-3 gap-6 items-center justify-end uppercase">
 				{navLinks()}
@@ -35,14 +35,16 @@ const NavBar: React.FC = () => {
 				<button
 					onClick={toggleMenu}
 					aria-label="Toggle menu"
-					className="text-white focus:outline-none">
+					className="focus:outline-none">
 					{menuOpen ? <X size={30} /> : <Menu size={30} />}
 				</button>
 			</div>
 
 			{/* Mobile dropdown menu */}
 			{menuOpen && (
-				<div className="flex flex-col gap-3 px-10 pb-10 md:hidden bg-[#10101A] text-right uppercase">
+				<div
+					className="flex flex-col gap-3 px-10 pb-10 md:hidden bg-[#10101A] text-left uppercase items-start w-full"
+					tabIndex={0}>
 					{navLinks(() => setMenuOpen(false))}
 				</div>
 			)}

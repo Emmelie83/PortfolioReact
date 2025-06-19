@@ -82,6 +82,11 @@ strong {
   font-size: 22px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @media (min-width: 345px) {
 
 
