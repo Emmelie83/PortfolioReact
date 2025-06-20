@@ -1,10 +1,8 @@
-import React from "react";
 import Project, { type ProjectProps } from "../components/Project";
 import scalacinema from "../assets/img/scalacinema.png";
 import messagesapp from "../assets/img/messagesapp.png";
 import onsight from "../assets/img/onsight.png";
 import rovarspraket from "../assets/img/rovarspraket.png";
-
 
 const projects: ProjectProps[] = [
 	{
@@ -43,18 +41,18 @@ const projects: ProjectProps[] = [
 	},
 ];
 
-const Projects: React.FC = () => (
-	<div>
-		<section id="projects">
-			<h2>My Projects</h2>
-			<div className="mt-10">
-				{projects.map((project, index) => (
-					<Project key={index} {...project} />
-				))}
-			</div>
-		</section>
-		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
-	</div>
-);
-
-export default Projects;
+export default function Projects() {
+	return (
+		<div>
+			<section id="projects">
+				<h2>My Projects</h2>
+				<div className="mt-10">
+					{projects.map((project) => (
+						<Project key={project.title} {...project} />
+					))}
+				</div>
+			</section>
+			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+		</div>
+	);
+}

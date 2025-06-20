@@ -1,6 +1,4 @@
-import React from "react";
 import SkillItem from "../components/SkillItem";
-
 
 import javaIcon from "../assets/icons/java.svg";
 import springbootIcon from "../assets/icons/springboot.svg";
@@ -54,7 +52,8 @@ const skills = [
 	],
 ];
 
-const Skills: React.FC = () => (
+export default function Skills() {
+  return (
 	<div>
 		<section id="skills">
 			<h2>Skills</h2>
@@ -71,5 +70,4 @@ const Skills: React.FC = () => (
 		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
 	</div>
 );
-
-export default Skills;
+}

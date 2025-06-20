@@ -30,12 +30,12 @@ export default function Header() {
 					<div className="flex gap-2.5 md:gap-4 lg:my-3">
 						<Button
 							address="#projects"
-							buttontext="See what I’ve built"
+							buttonText="See what I’ve built"
 							variant="accent"
 						/>
 						<Button
 							address="#contact"
-							buttontext="Drop a Message"
+							buttonText="Drop a Message"
 						/>
 					</div>
 

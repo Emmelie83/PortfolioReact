@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import ContactInput from "./ContactInput";
 import ContactStatus from "./ContactStatus";
@@ -16,7 +15,7 @@ const inputFields: {
 	{ as: "textarea", name: "message", placeholder: "Your Message" },
 ];
 
-const ContactForm: React.FC = () => {
+export default function ContactForm() {
 	const {
 		formData,
 		handleChange,
@@ -52,7 +51,7 @@ const ContactForm: React.FC = () => {
 
 						<div className="self-end">
 							<Button
-								buttontext={
+								buttonText={
 									isSubmitting ? "Sending..." : "Send Message"
 								}
 								type="submit"
@@ -64,6 +63,4 @@ const ContactForm: React.FC = () => {
 			)}
 		</>
 	);
-};
-
-export default ContactForm;
+}

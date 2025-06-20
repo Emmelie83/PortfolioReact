@@ -1,4 +1,3 @@
-import React from "react";
 import SocialIcon from "../components/SocialIcon";
 import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";

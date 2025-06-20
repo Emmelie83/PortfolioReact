@@ -1,4 +1,4 @@
-const NowSection: React.FC = () => {
+export default function NowSection() {
 	return (
 		<div className="lg:p-6 max-w-[300px] md:max-w-[400px]">
 			<div className="space-y-6">
@@ -17,6 +17,4 @@ const NowSection: React.FC = () => {
 			</div>
 		</div>
 	);
-};
-
-export default NowSection;
+}

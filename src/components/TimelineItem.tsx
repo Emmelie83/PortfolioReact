@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useCallback } from "react";
 import { Plus } from "lucide-react";
 
 interface TimelineItemProps {
@@ -9,14 +9,18 @@ interface TimelineItemProps {
 	defaultOpen?: boolean;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({
+export default function TimelineItem({
 	date,
 	title,
 	company,
 	children,
 	defaultOpen = false,
-}) => {
-	const [isOpen, setIsOpen] = useState(defaultOpen);
+}: TimelineItemProps) {
+	const [isExpanded, setIsExpanded] = useState(defaultOpen);
+
+	const toggleExpanded = useCallback(() => {
+		setIsExpanded((prev) => !prev);
+	}, []);
 
 	return (
 		<div className="relative mb-6 pl-1 md:pl-3 lg:max-w-3/5 pt-3">
@@ -29,30 +33,30 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 
 			<div className="w-full h-full ml-4">
 				<button
-					onClick={() => setIsOpen(!isOpen)}
-					aria-expanded={isOpen}
+					onClick={toggleExpanded}
+					aria-expanded={isExpanded}
+					aria-label={
+						isExpanded ? "Collapse content" : "Expand content"
+					}
 					className="w-4 h-4 flex items-center justify-center transition-transform duration-300">
 					<Plus
 						className={`transition-transform my-3 duration-300 text-accent ${
-							isOpen ? "rotate-45" : ""
+							isExpanded ? "rotate-45" : ""
 						}`}
 						size={24}
 						strokeWidth={2}
 					/>
 				</button>
 
-				{/* Toggle Content */}
 				<div
 					className={`transition-all mt-2 overflow-hidden ${
-						isOpen
+						isExpanded
 							? "max-h-[1000px] opacity-100"
 							: "max-h-0 opacity-0"
 					}`}>
-					<div className="">{children}</div>
+					<div>{children}</div>
 				</div>
 			</div>
 		</div>
 	);
-};
-
-export default TimelineItem;
+}

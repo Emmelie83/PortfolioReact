@@ -1,12 +1,10 @@
-import React from "react";
-
 interface SocialIconProps {
 	address: string;
 	path: string;
 	alt: string;
 }
 
-const SocialIcon: React.FC<SocialIconProps> = ({ address, path, alt }) => {
+export default function SocialIcon({ address, path, alt }: SocialIconProps) {
 	return (
 		<a href={address} target="_blank" rel="noopener noreferrer">
 			<img
@@ -16,6 +14,4 @@ const SocialIcon: React.FC<SocialIconProps> = ({ address, path, alt }) => {
 			/>
 		</a>
 	);
-};
-
-export default SocialIcon;
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import type { FormFieldNames } from "../interfaces/types"; 
 
 type Props = {
@@ -12,14 +11,14 @@ type Props = {
 	) => void;
 };
 
-const ContactInput: React.FC<Props> = ({
+export default function ContactInput({
 	as = "input",
 	type = "text",
 	name,
 	placeholder,
 	value,
 	onChange,
-}) => {
+}: Props) {
 	const commonProps = {
 		name,
 		placeholder,
@@ -36,6 +35,4 @@ const ContactInput: React.FC<Props> = ({
 	) : (
 		<input {...commonProps} type={type} />
 	);
-};
-
-export default ContactInput;
+}
