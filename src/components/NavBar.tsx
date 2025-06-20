@@ -48,7 +48,7 @@ export default function NavBar() {
 				{/* Mobile menu */}
 				{menuOpen && (
 					<div
-						className="flex flex-col gap-4 hover:border-b-white px-10 pb-10 md:hidden bg-[#10101A] text-left uppercase items-start w-full h-lvh transition-all duration-300 ease-in-out"
+						className="flex flex-col gap-4 hover:border-b-white px-10 md:hidden bg-[#10101A] text-left uppercase items-start w-full h-lvh transition-all duration-300 ease-in-out"
 						tabIndex={0}>
 						{navLinks(() => setMenuOpen(false))}
 					</div>
