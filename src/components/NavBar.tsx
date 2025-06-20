@@ -55,10 +55,10 @@ export default function NavBar() {
 	);
 
 	return (
-		<header className="flex justify-center">
+		<header className="flex justify-center lg:hover:brightness-175">
 			<nav
 				id="navbar"
-				className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] text-white lg:hover:brightness-175 max-w-[1800px] p-2">
+				className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] text-white max-w-[1800px] p-2">
 				{/* Desktop */}
 				<div className="hidden md:flex px-10 py-2 md:gap-8 lg:gap-12 items-center justify-end uppercase">
 					{navLinks()}
