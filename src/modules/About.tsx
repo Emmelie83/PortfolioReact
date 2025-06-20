@@ -15,8 +15,7 @@ export default function About() {
 		<div id="about" className="pt-12">
 			<section>
 				<h2>About Me</h2>
-
-				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between">
+				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between my-10">
 					<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
 						{paragraphs.map((text, i) => (
 							<p

@@ -62,10 +62,6 @@ section {
   padding: 3.5rem 1rem;
 }
 
-#projects {
-  padding-bottom: 2rem;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -276,9 +272,6 @@ html {
     margin-right: auto;
   }
 
-  #projects {
-    padding-bottom: 8rem;
-  }
 }
 
 @media (min-width: 1224px) {

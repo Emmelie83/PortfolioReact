@@ -5,7 +5,7 @@ export default function ContactSection() {
 		<div id="contact" className="pt-12">
 			<section>
 				<h2>Get in touch</h2>
-				<div className="flex flex-col lg:flex-row gap-20 lg:gap-30 md:justify-between">
+				<div className="flex flex-col lg:flex-row gap-20 lg:gap-30 md:justify-between my-10">
 					<div className="lg:w-1/2">
 						<p>info@emmeliejohansson.com</p>
 						<p className="pt-1">+49 151 6772 5898</p>
