@@ -54,10 +54,10 @@ const skills = [
 
 export default function Skills() {
   return (
-		<div id="skills">
+		<div id="skills" className="pt-12">
 			<section>
 				<h2>Skills</h2>
-				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 lg:gap-y-16 gap-x-10 mt-10">
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 lg:gap-y-16 gap-x-10">
 					{skills.map((category, index) => (
 						<ul key={index} className="space-y-8 lg:space-y-10">
 							{category.map((skill) => (

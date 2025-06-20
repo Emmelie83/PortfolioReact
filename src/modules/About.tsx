@@ -12,11 +12,11 @@ const paragraphs = [
 
 export default function About() {
   return (
-		<div id="about">
+		<div id="about" className="pt-12">
 			<section>
 				<h2>About Me</h2>
 
-				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between lg:mt-10">
+				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between">
 					<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
 						{paragraphs.map((text, i) => (
 							<p

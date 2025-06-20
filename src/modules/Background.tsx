@@ -74,7 +74,7 @@ const timelineData: TimelineEntry[] = [
 
 export default function Background() {
   return (
-		<div id="background">
+		<div id="background" className="pt-12">
 			<section>
 				<h2>Background</h2>
 				<ol className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">

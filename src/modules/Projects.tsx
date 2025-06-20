@@ -43,7 +43,7 @@ const projects: ProjectProps[] = [
 
 export default function Projects() {
 	return (
-		<div id="projects">
+		<div id="projects" className="pt-12">
 			<section>
 				<h2>My Projects</h2>
 				<div className="mt-10">

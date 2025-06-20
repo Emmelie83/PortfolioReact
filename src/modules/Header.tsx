@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 export default function Header() {
 	return (
-		<div id="start">
+		<div id="start" className="mt-10">
 			<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[600px] gap-10 px-4 md:px-14 lg:px-16 pt-20 lg:pt-12 lg:mt-12 md:pt-28 mb-12 sm:mb-20 lg:mb-0">
 				<img
 					className="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[260px] rounded-md"

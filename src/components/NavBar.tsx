@@ -45,7 +45,7 @@ export default function NavBar() {
                         md:hover:before:w-full
                         ${
 							activeSection === section
-								? "border-b-2 border-gray-400"
+								? "border-b-1 border-gray-400"
 								: ""
 						}`}>
 					{section.charAt(0).toUpperCase() + section.slice(1)}
@@ -60,7 +60,7 @@ export default function NavBar() {
 				id="navbar"
 				className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] text-white max-w-[1800px] p-2">
 				{/* Desktop */}
-				<div className="hidden md:flex px-10 py-2 md:gap-8 lg:gap-12 items-center justify-end uppercase">
+				<div className="hidden md:flex px-10 py-2 md:gap-8 lg:gap-10 items-center justify-end uppercase">
 					{navLinks()}
 				</div>
 

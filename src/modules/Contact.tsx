@@ -2,10 +2,10 @@ import ContactForm from "../components/ContactForm";
 
 export default function ContactSection() {
 	return (
-		<div id="contact">
+		<div id="contact" className="pt-12">
 			<section>
 				<h2>Get in touch</h2>
-				<div className="flex flex-col lg:flex-row gap-20 lg:gap-30 md:justify-between mt-10">
+				<div className="flex flex-col lg:flex-row gap-20 lg:gap-30 md:justify-between">
 					<div className="lg:w-1/2">
 						<p>info@emmeliejohansson.com</p>
 						<p className="pt-1">+49 151 6772 5898</p>
