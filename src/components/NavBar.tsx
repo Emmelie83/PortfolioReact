@@ -1,28 +1,58 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navSections = ["about", "background", "skills", "projects", "contact"];
 
 export default function NavBar() {
 	const [menuOpen, setMenuOpen] = useState(false);
-	const toggleMenu = () => setMenuOpen((prev) => !prev);
+	const [activeSection, setActiveSection] = useState<string>("");
+
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setActiveSection(entry.target.id);
+					}
+				});
+			},
+			{
+				rootMargin: "-50% 0px -50% 0px",
+				threshold: 0,
+			}
+		);
+
+		navSections.forEach((id) => {
+			const section = document.getElementById(id);
+			if (section) observer.observe(section);
+		});
+
+		return () => observer.disconnect();
+	}, []);
 
 	const navLinks = useCallback(
-    (onLinkClick?: () => void) =>
-      navSections.map((section) => (
-        <a
-          key={section}
-          href={`#${section}`}
-          onClick={onLinkClick}
-          className="relative w-full md:w-auto py-2 text-left md:text-center uppercase
-                             before:content-[''] before:absolute before:bottom-0 before:left-0
-                             before:h-[1px] before:w-0 before:bg-white before:transition-all before:duration-300
-                             hover:before:w-full">
-          {section.charAt(0).toUpperCase() + section.slice(1)}
-        </a>
-      )),
-    []
-  );
+		(onLinkClick?: () => void) =>
+			navSections.map((section) => (
+				<a
+					key={section}
+					href={`#${section}`}
+					onClick={onLinkClick}
+					className={`relative w-full md:w-auto py-2 text-left md:text-center uppercase
+                        md:before:content-[''] md:before:absolute md:before:bottom-0 md:before:left-0
+                        md:before:h-[1px] md:before:w-0 md:before:bg-white md:before:transition-all md:before:duration-300
+                        md:hover:before:w-full
+                        ${
+							activeSection === section
+								? "border-b-2 border-gray-400"
+								: ""
+						}`}>
+					{section.charAt(0).toUpperCase() + section.slice(1)}
+				</a>
+			)),
+		[activeSection]
+	);
 
 	return (
 		<header className="flex justify-center">
@@ -48,7 +78,7 @@ export default function NavBar() {
 				{/* Mobile menu */}
 				{menuOpen && (
 					<div
-						className="flex flex-col gap-4 hover:border-b-white px-10 md:hidden bg-[#10101A] text-left uppercase items-start w-full h-lvh transition-all duration-300 ease-in-out"
+						className="flex flex-col gap-4 px-10 pb-10 md:hidden bg-[#10101A] text-left uppercase items-start w-full h-lvh transition-all duration-300 ease-in-out"
 						tabIndex={0}>
 						{navLinks(() => setMenuOpen(false))}
 					</div>
