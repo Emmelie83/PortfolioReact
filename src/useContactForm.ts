@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import HttpService from "./services/HttpService";
 import type { FormData } from "./interfaces/types";
 
+const stripTags = (input: string) => input.replace(/<\/?[^>]+(>|$)/g, "");
+
 const useContactForm = () => {
 	const [formData, setFormData] = useState<FormData>({
 		name: "",
@@ -24,10 +26,16 @@ const useContactForm = () => {
 		setIsSubmitting(true);
 		setStatusMessage("");
 
+		const sanitizedData = {
+			name: stripTags(formData.name),
+			email: stripTags(formData.email),
+			message: stripTags(formData.message),
+		};
+
 		const result = await HttpService.request(
 			"/contact.php",
 			"POST",
-			formData
+			sanitizedData
 		);
 		const success = result !== null;
 
