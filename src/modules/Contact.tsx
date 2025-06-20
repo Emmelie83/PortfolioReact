@@ -2,8 +2,8 @@ import ContactForm from "../components/ContactForm";
 
 export default function ContactSection() {
 	return (
-		<div>
-			<section id="contact">
+		<div id="contact">
+			<section>
 				<h2>Get in touch</h2>
 				<div className="flex flex-col lg:flex-row gap-20 lg:gap-30 md:justify-between mt-10">
 					<div className="lg:w-1/2">

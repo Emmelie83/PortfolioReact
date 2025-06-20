@@ -11,29 +11,32 @@ const paragraphs = [
 ];
 
 export default function About() {
-  return(
-	<div>
-		<section id="about">
-			<h2>About Me</h2>
+  return (
+		<div id="about">
+			<section>
+				<h2>About Me</h2>
 
-			<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between lg:mt-10">
-				<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
-					{paragraphs.map((text, i) => (
-						<p key={i} dangerouslySetInnerHTML={{ __html: text }} />
-					))}
-					<SocialIcon
-						address="https://www.linkedin.com/in/emmeliejohansson/"
-						path={linkedinIcon}
-						alt="LinkedIn Profile"
-					/>
-				</div>
+				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between lg:mt-10">
+					<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
+						{paragraphs.map((text, i) => (
+							<p
+								key={i}
+								dangerouslySetInnerHTML={{ __html: text }}
+							/>
+						))}
+						<SocialIcon
+							address="https://www.linkedin.com/in/emmeliejohansson/"
+							path={linkedinIcon}
+							alt="LinkedIn Profile"
+						/>
+					</div>
 
-				<div className="lg:w-1/3">
-					<NowSection />
+					<div className="lg:w-1/3">
+						<NowSection />
+					</div>
 				</div>
-			</div>
-		</section>
-		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
-	</div>
-  )
+			</section>
+			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+		</div>
+  );
 }

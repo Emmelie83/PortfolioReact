@@ -54,20 +54,20 @@ const skills = [
 
 export default function Skills() {
   return (
-	<div>
-		<section id="skills">
-			<h2>Skills</h2>
-			<div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 lg:gap-y-10 gap-x-10 mt-10">
-				{skills.map((category, index) => (
-					<ul key={index} className="space-y-6">
-						{category.map((skill) => (
-							<SkillItem key={skill.label} {...skill} />
-						))}
-					</ul>
-				))}
-			</div>
-		</section>
-		<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
-	</div>
-);
+		<div id="skills">
+			<section>
+				<h2>Skills</h2>
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 lg:gap-y-16 gap-x-10 mt-10">
+					{skills.map((category, index) => (
+						<ul key={index} className="space-y-8 lg:space-y-10">
+							{category.map((skill) => (
+								<SkillItem key={skill.label} {...skill} />
+							))}
+						</ul>
+					))}
+				</div>
+			</section>
+			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+		</div>
+  );
 }

@@ -55,7 +55,7 @@ export default function NavBar() {
 	);
 
 	return (
-		<header className="flex justify-center lg:hover:brightness-175">
+		<header className="flex justify-center">
 			<nav
 				id="navbar"
 				className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] text-white max-w-[1800px] p-2">

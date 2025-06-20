@@ -43,8 +43,8 @@ const projects: ProjectProps[] = [
 
 export default function Projects() {
 	return (
-		<div>
-			<section id="projects">
+		<div id="projects">
+			<section>
 				<h2>My Projects</h2>
 				<div className="mt-10">
 					{projects.map((project) => (

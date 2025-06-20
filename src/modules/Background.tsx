@@ -73,37 +73,39 @@ const timelineData: TimelineEntry[] = [
 ];
 
 export default function Background() {
-	return (
-		<section id="background">
-			<h2>Background</h2>
-			<ol className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">
-				{timelineData.map(
-					({ date, title, company, intro, content }, index) => {
-						const key = `${title}-${date}`;
-						return (
-							<li key={key}>
-								<TimelineItem
-									date={date}
-									title={title}
-									company={company}
-									defaultOpen={index === 0}>
-									<div>
-										<p className="mb-2 leading-tight">
-											{intro}
-										</p>
-										<ul className="list-disc pl-6 leading-relaxed">
-											{content.map((line, i) => (
-												<li key={i}>{line}</li>
-											))}
-										</ul>
-									</div>
-								</TimelineItem>
-							</li>
-						);
-					}
-				)}
-			</ol>
+  return (
+		<div id="background">
+			<section>
+				<h2>Background</h2>
+				<ol className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">
+					{timelineData.map(
+						({ date, title, company, intro, content }, index) => {
+							const key = `${title}-${date}`;
+							return (
+								<li key={key}>
+									<TimelineItem
+										date={date}
+										title={title}
+										company={company}
+										defaultOpen={index === 0}>
+										<div>
+											<p className="mb-2 leading-tight">
+												{intro}
+											</p>
+											<ul className="list-disc pl-6 leading-relaxed">
+												{content.map((line, i) => (
+													<li key={i}>{line}</li>
+												))}
+											</ul>
+										</div>
+									</TimelineItem>
+								</li>
+							);
+						}
+					)}
+				</ol>
+			</section>
 			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
-		</section>
-	);
+		</div>
+  );
 }
