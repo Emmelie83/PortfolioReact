@@ -25,7 +25,7 @@ export default function ContactInput({
 		required: true,
 		value,
 		onChange,
-		className: `form-input border-b-2 py-2 outline-none font-sans px-4 transition-all duration-300 ${
+		className: `form-input border-b-1 py-2 outline-none font-sans px-4 transition-all duration-300 ${
 			value ? "rounded" : ""
 		}`,
 	};
