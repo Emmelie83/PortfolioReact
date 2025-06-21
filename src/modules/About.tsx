@@ -12,7 +12,7 @@ const paragraphs = [
 
 export default function About() {
   return (
-		<div id="about" className="pt-12">
+		<div id="about" className="pt-8">
 			<section>
 				<h2>About Me</h2>
 				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between my-10">

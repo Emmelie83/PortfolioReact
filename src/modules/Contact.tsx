@@ -2,7 +2,7 @@ import ContactForm from "../components/ContactForm";
 
 export default function ContactSection() {
 	return (
-		<div id="contact" className="pt-12">
+		<div id="contact" className="pt-8">
 			<section>
 				<h2>Get in touch</h2>
 				<div className="flex flex-col lg:flex-row gap-20 lg:gap-30 md:justify-between my-10">

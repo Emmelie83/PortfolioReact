@@ -38,7 +38,6 @@ export default function Header() {
 							buttonText="Drop a Message"
 						/>
 					</div>
-
 					<SocialIcons />
 				</div>
 			</header>

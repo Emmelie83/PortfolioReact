@@ -54,7 +54,7 @@ const skills = [
 
 export default function Skills() {
   return (
-		<div id="skills" className="pt-12">
+		<div id="skills" className="pt-8">
 			<section>
 				<h2>Skills</h2>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 lg:gap-y-16 gap-x-10 my-10">
