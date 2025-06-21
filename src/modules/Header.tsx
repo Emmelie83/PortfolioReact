@@ -23,7 +23,7 @@ export default function Header() {
 						<h1 className="leading-tight">Emmelie Johansson</h1>
 						<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[22px] leading-tight">
 							a full-stack Java developer based in Leipzig,
-							Germany
+							Germany.
 						</p>
 					</div>
 
