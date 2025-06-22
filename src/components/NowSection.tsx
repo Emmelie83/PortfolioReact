@@ -6,13 +6,23 @@ export default function NowSection() {
 					<p className="font-semibold flex lg:items-center gap-2 border-b-2 border-[#848a96] pb-2 mb-2">
 						Books I'm reading
 					</p>
-					<p>Clean Code, Robert C. Martin</p>
+					<ul>
+						<li>Clean Code, Robert C. Martin</li>
+					</ul>
 				</div>
 				<div>
 					<p className="font-semibold flex lg:items-center gap-2 border-b-2 border-[#848a96] pb-2 mb-2">
 						Courses I'm taking
 					</p>
-					<p>The Complete Agentic AI Engineering Course (2025)</p>
+					<ul>
+						<li>
+							The Complete Agentic AI Engineering Course (2025)
+						</li>
+						<li>
+							Android Mobile App Development (7.5 ETCS), Umeå
+							University
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
