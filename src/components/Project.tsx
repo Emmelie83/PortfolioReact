@@ -21,7 +21,7 @@ export default function Project ({
 		<div
 			className={`flex flex-col lg:flex-row ${
 				reverse ? "lg:flex-row-reverse" : ""
-			} lg:gap-5 xl:gap-10 md:w-3/4 lg:w-full bg-[#1D1D2A] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center bg-brightness-125`}>
+			} lg:gap-5 xl:gap-10 md:w-3/4 lg:w-full bg-[#1d1d29] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center`}>
 			{/* Image Section */}
 			<div className="lg:w-1/2 lg:py-1 xl:py-0">
 				<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">

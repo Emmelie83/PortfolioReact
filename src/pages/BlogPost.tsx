@@ -22,7 +22,7 @@ export default function BlogPost() {
 			<NavBar />
 			<div className="pt-20">
 				<h1 className="text-3xl font-bold mb-4">{post.title}</h1>
-				<p className="text-gray-500 text-sm mb-4">{post.date}</p>
+				<p className="mb-4">{post.date}</p>
 				<p>{post.content}</p>
 			</div>
 		</div>
