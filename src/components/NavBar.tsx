@@ -40,7 +40,7 @@ export default function NavBar() {
 		<header id="home"  className="flex justify-center">
 			<nav className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] text-white max-w-[1800px] p-2 md:pr-4 lg:pr-10">
 				{/* Desktop */}
-				<div className="hidden md:flex px-10 py-2 md:gap-8 lg:gap-10 items-center justify-end uppercase">
+				<div className="hidden lg:flex px-10 py-2 md:gap-8 lg:gap-10 items-center justify-end uppercase">
 					<NavLinks
 						navSections={navSections}
 						activeSection={activeSection}
@@ -50,7 +50,7 @@ export default function NavBar() {
 				</div>
 
 				{/* Mobile Toggle */}
-				<div className="flex md:hidden justify-end p-3">
+				<div className="flex lg:hidden justify-end p-3">
 					<button
 						onClick={toggleMenu}
 						aria-label="Toggle menu"
@@ -61,7 +61,7 @@ export default function NavBar() {
 
 				{/* Mobile Menu */}
 				{menuOpen && (
-					<div className="flex flex-col gap-4 px-10 pb-10 md:hidden bg-[#10101A] text-left uppercase items-start w-full h-lvh transition-all duration-300 ease-in-out">
+					<div className="flex flex-col gap-4 px-10 pb-10 lg:hidden bg-[#10101A] text-left uppercase items-start w-full h-lvh transition-all duration-300 ease-in-out">
 						<NavLinks
 							navSections={navSections}
 							activeSection={activeSection}
