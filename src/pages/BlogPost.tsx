@@ -10,7 +10,7 @@ export default function BlogPost() {
 		return (
 			<div className="max-w-screen-xl mx-auto p-4">
 				<NavBar />
-				<div className="pt-20">
+				<div className="pt-30">
 					<h1 className="text-3xl font-bold">Post not found</h1>
 				</div>
 			</div>
@@ -20,7 +20,7 @@ export default function BlogPost() {
 	return (
 		<div className="max-w-screen-xl mx-auto p-4">
 			<NavBar />
-			<div className="pt-20">
+			<div className="pt-30">
 				<h1 className="text-3xl font-bold mb-4">{post.title}</h1>
 				<p className="mb-4">{post.date}</p>
 				<p>{post.content}</p>
