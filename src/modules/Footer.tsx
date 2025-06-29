@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
 		<footer className="flex flex-col items-center gap-4 my-10">
-			<a href="#home" className="flex flex-col items-center text-accent">
+			<a href="#start" className="flex flex-col items-center text-accent">
 				<ChevronsUp size={40} strokeWidth={1} />
 			</a>
 			<p className="text-sm lg:text-md mb-4">
