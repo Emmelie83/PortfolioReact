@@ -3,9 +3,9 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"I'm a former <strong>translator</strong> and <strong>entrepreneur</strong>, lifelong learner, and a <strong>curious soul</strong> with a love for clean code, clever design, and meaningful connections.",
+	"I’m a former translator and entrepreneur, <strong>lifelong learner</strong>, and curious soul. I have a passion for clean code, clever design, and meaningful connections.",
 	"My journey has taken me from the world of language and nuance to the fast-paced world of tech. Along the way, I’ve built <strong>APIs</strong>, designed <strong>user interfaces</strong>, and found my place at the intersection of structure and creativity.",
-	"Lately, I’ve been diving into <strong>AI</strong> — especially how it overlaps with language and communication and the kind of translation work I used to do.",
+	"Lately, I’ve been <strong>exploring AI</strong> — especially how it connects with language, communication, and the translation work I used to do",
 	"Outside of work, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also enjoy <strong>connecting with new people</strong>, so feel free to reach out on LinkedIn or drop me an email. I'd love to hear from you!",
 ];
 
