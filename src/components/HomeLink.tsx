@@ -8,10 +8,8 @@ export default function HomeLink({ onClick }: { onClick?: () => void }) {
 			to="/#home"
 			aria-label="Home"
 			onClick={onClick}
-			className="hover:text-blue-400 transition flex items-center">
+			className="hover:scale-110 transition duration-200">
 			<HomeIcon />
-			{/* Optional: Add "Home" text next to icon on mobile */}
-			{/* <span className="ml-2 uppercase">Home</span> */}
 		</HashLink>
 	);
 }
