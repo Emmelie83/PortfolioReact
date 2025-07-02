@@ -3,18 +3,17 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"<strong>Tech moves fast — and I love trying to keep up.</strong>",
-	"Whether it’s building APIs in Java or sketching interfaces in Figma, I enjoy being at the intersection of logic and creativity. I earned my degree in Java Development from IT-Högskolan, a Swedish vocational university focused on IT and software development.",
-	"My journey into tech began when I decided to leave a career I truly valued: translation. Not because the field was outdated, but because I felt I had stopped growing. I was looking for something dynamic, something that would challenge me and keep doing so.",
-	"<strong>I found that in coding</strong>. Today, I learn something new almost every day. And with the industry constantly evolving, I don’t see that changing anytime soon.",
-	"Outside of work, I like to stay active with bouldering, unwind in nature, and get absorbed in a good book. I also enjoy connecting with new people — so feel free to reach out on LinkedIn or drop me an email!",
+	"I'm a former <strong>translator</strong> and <strong>entrepreneur</strong>, lifelong learner, and a <strong>curious soul</strong> with a love for clean code, clever design, and meaningful connections.",
+	"My journey has taken me from the world of language and nuance to the fast-paced world of tech. Along the way, I’ve built <strong>APIs</strong>, designed <strong>user interfaces</strong>, and found my place at the intersection of structure and creativity.",
+	"Lately, I’ve been diving into <strong>AI</strong> — especially how it overlaps with language and communication and the kind of translation work I used to do.",
+	"Outside of work, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also enjoy <strong>connecting with new people</strong>, so feel free to reach out on LinkedIn or drop me an email. I'd love to hear from you!",
 ];
 
 export default function About() {
   return (
 		<div id="about" className="pt-8">
 			<section>
-				<h2>About Me</h2>
+				<h2>About me</h2>
 				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between my-10">
 					<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
 						{paragraphs.map((text, i) => (

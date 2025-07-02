@@ -13,7 +13,7 @@ export default function Blog() {
 						<Link
 							to={`/blog/${post.slug}`}
 							key={post.id}
-							className="block border bg-[#1d1d29] border-gray-400 rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+							className="block border border-gray-400 rounded-md hover:backdrop-brightness-200 transition overflow-hidden">
 							<img
 								src={post.image}
 								alt={post.title}
