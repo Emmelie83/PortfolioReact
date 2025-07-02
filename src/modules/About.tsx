@@ -3,10 +3,10 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"I’m a former translator and entrepreneur, and a lifelong learner. Naturally curious, I have a passion for clean code, clever design, and meaningful connections.",
-	"During my education, Java was my primary language. Today I identify as a fullstack developer, drawn to the intersection of structure and creativity.",
+	"I’m a former translator and entrepreneur, and a lifelong learner. As a naturally curious soul, I value clean code, clever design, and meaningful connections.",
+	"During my education, Java was my primary language. Today, I identify as a fullstack developer drawn to the intersection of structure and creativity.",
 	"Lately, I’ve been diving into AI, especially how it relates to language, communication, and the kind of translation work I once did.",
-	"When I’m not coding, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I love meeting new people, so feel free to reach out on LinkedIn or send me an email — I’d be glad to connect!",
+	"When I’m not coding, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also love meeting new people, so feel free to reach out on LinkedIn or send me an email — I’d be glad to connect!",
 ];
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
 			<section>
 				<h2>About me</h2>
 				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between my-10">
-					<div className="sm:3/5 md:w-8/10 lg:w-5/9 space-y-4">
+					<div className="sm:3/5 md:w-8/10 lg:w-2/3 space-y-4">
 						{paragraphs.map((text, i) => (
 							<p
 								key={i}
