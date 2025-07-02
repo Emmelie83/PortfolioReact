@@ -3,10 +3,10 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"I’m a former translator and entrepreneur, <strong>lifelong learner</strong>, and <strong>curious soul</strong>. I have a passion for clean code, clever design, and meaningful connections.",
-	"My journey has taken me from the world of language and nuance to the fast-paced world of tech. Along the way, I’ve built <strong>APIs</strong>, designed <strong>user interfaces</strong>, and found my place at the intersection of structure and creativity.",
-	"Lately, I’ve been <strong>exploring AI</strong> — especially how it connects with language, communication, and the translation work I used to do",
-	"Outside of work, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also enjoy <strong>connecting with new people</strong>, so feel free to reach out on LinkedIn or drop me an email. I'd love to hear from you!",
+	"I’m a former translator and entrepreneur, and a lifelong learner. Naturally curious, I have a passion for clean code, clever design, and meaningful connections.",
+	"During my education, Java was my primary language. Today I identify as a fullstack developer, drawn to the intersection of structure and creativity.",
+	"Lately, I’ve been diving into AI, especially how it relates to language, communication, and the kind of translation work I once did.",
+	"When I’m not coding, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I love meeting new people, so feel free to reach out on LinkedIn or send me an email — I’d be glad to connect!",
 ];
 
 export default function About() {
