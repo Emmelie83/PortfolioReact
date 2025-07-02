@@ -77,7 +77,7 @@ export default function Background() {
 		<div id="background" className="pt-8">
 			<section>
 				<h2>Background</h2>
-				<ol className="relative border-l-2 md:border-l-3 border-[#585C64] pl-2 sm:pl-6 my-10">
+				<ol className="relative border-l border-[#d5cfd1] pl-2 sm:pl-6 my-10">
 					{timelineData.map(
 						({ date, title, company, intro, content }, index) => {
 							const key = `${title}-${date}`;
@@ -105,7 +105,7 @@ export default function Background() {
 					)}
 				</ol>
 			</section>
-			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+			<hr className="border-t border-[#d5cfd1] mx-auto brightness-50" />
 		</div>
   );
 }

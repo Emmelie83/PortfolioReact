@@ -67,7 +67,7 @@ export default function Skills() {
 					))}
 				</div>
 			</section>
-			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+			<hr className="border-t border-[#d5cfd1] mx-auto brightness-50" />
 		</div>
   );
 }

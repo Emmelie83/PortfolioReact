@@ -3,7 +3,7 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"I’m a former translator and entrepreneur, <strong>lifelong learner</strong>, and curious soul. I have a passion for clean code, clever design, and meaningful connections.",
+	"I’m a former translator and entrepreneur, <strong>lifelong learner</strong>, and <strong>curious soul</strong>. I have a passion for clean code, clever design, and meaningful connections.",
 	"My journey has taken me from the world of language and nuance to the fast-paced world of tech. Along the way, I’ve built <strong>APIs</strong>, designed <strong>user interfaces</strong>, and found my place at the intersection of structure and creativity.",
 	"Lately, I’ve been <strong>exploring AI</strong> — especially how it connects with language, communication, and the translation work I used to do",
 	"Outside of work, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also enjoy <strong>connecting with new people</strong>, so feel free to reach out on LinkedIn or drop me an email. I'd love to hear from you!",
@@ -34,7 +34,7 @@ export default function About() {
 					</div>
 				</div>
 			</section>
-			<hr className="border-t-2 border-[#848a96] mx-auto brightness-50" />
+			<hr className="border-t border-[#d5cfd1] mx-auto brightness-50" />
 		</div>
   );
 }
