@@ -1,4 +1,6 @@
-import Button from "./Button";
+import SocialIcon from "./SocialIcon";
+import githubIcon from "../assets/icons/github.svg";
+import globeIcon from "../assets/icons/globe.svg";
 
 export interface ProjectProps {
 	title: string;
@@ -6,7 +8,8 @@ export interface ProjectProps {
 	techStack: string;
 	reverse?: boolean;
 	address: string;
-	description?: string;
+  description?: string;
+  liveLink?: string;
 }
 
 export default function Project ({
@@ -14,8 +17,9 @@ export default function Project ({
 	image,
 	techStack,
 	reverse,
-	address,
-	description,
+  address,
+  description,
+  liveLink
 }: ProjectProps) {
 	return (
 		<div
@@ -46,12 +50,19 @@ export default function Project ({
 					</div>
 				)}
 
-				<div className="flex gap-2.5 md:gap-4 my-4 lg:mt-3 xl:mt-4">
-					<Button
+				<div className="flex gap-4 md:gap-6 my-4 lg:mt-3 xl:mt-4">
+					<SocialIcon
 						address={address}
-						newTab
-						buttonText="View on GitHub"
+						path={githubIcon}
+						alt="Source code on GitHub"
 					/>
+					{liveLink && (
+						<SocialIcon 
+							address={liveLink}
+							path={globeIcon}
+							alt="Live site"
+						/>
+					)}
 				</div>
 			</div>
 		</div>
