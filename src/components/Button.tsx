@@ -17,7 +17,7 @@ export default function Button({
 		"inline-block uppercase px-4 py-3 md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer hover:scale-110 transition duration-200";
 
 	const variantClasses = {
-		accent: "bg-[#D3929F] text-[#10101A] border lg:border-2 border-[#D3929F]",
+		accent: "bg-[#E595AE] text-[#10101A] border lg:border-2 border-[#D3929F]",
 		transparent: "border lg:border-2",
 	}[variant];
 

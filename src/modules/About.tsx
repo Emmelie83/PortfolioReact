@@ -3,7 +3,7 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"I’m a former translator and entrepreneur, and a lifelong learner. As a naturally curious soul, I value clean code, clever design, and meaningful connections.",
+	"I’m a former translator and entrepreneur, and a lifelong learner. Naturally curious, I value clean code, clever design, and meaningful connections.",
 	"During my education, Java was my primary language. Today, I identify as a fullstack developer drawn to the intersection of structure and creativity.",
 	"Lately, I’ve been diving into AI, especially how it relates to language, communication, and the kind of translation work I once did.",
 	"When I’m not coding, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also love meeting new people, so feel free to reach out on LinkedIn or send me an email — I’d be glad to connect!",
