@@ -23,7 +23,7 @@ export default function Header() {
 							Hi, I'm
 						</p>
 						<h1 className="leading-tight">Emmelie Johansson</h1>
-						<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[22px] leading-tight">
+						<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[22px] leading-tight mt-1">
 							a full-stack Java developer based in Leipzig,
 							Germany.
 						</p>
@@ -39,8 +39,10 @@ export default function Header() {
 							address="#contact"
 							buttonText="Drop a Message"
 						/>
-					</div>
-					<SocialIcons />
+          </div>
+          <div className="mt-2">
+            <SocialIcons />
+          </div>
 				</div>
 			</header>
 		</div>

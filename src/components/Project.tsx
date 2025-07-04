@@ -50,7 +50,7 @@ export default function Project ({
 					</div>
 				)}
 
-				<div className="flex gap-4 md:gap-6 my-4 lg:mt-3 xl:mt-4">
+				<div className="flex gap-4 md:gap-6 my-4 lg:mt-4 xl:mt-6">
 					<SocialIcon
 						address={address}
 						path={githubIcon}
