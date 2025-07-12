@@ -37,9 +37,8 @@ const projects: ProjectProps[] = [
 		techStack: "React · Vite · TypeScript · Tailwind",
 		reverse: true,
 		address: "https://github.com/Emmelie83/RobberLanguageTranslator",
-		liveLink: "https://robberlanguage.netlify.app/",
 		description:
-			"Translator from Swedish into the Robber Language. I originally built this as my first JavaScript project — now I'm rebuilding it using React and TypeScript to showcase my current skill set. The new version will be live soon.",
+			"Translator from Swedish into the Robber Language. I originally built this as my first JavaScript project — now I'm rebuilding it using React and TypeScript to showcase my current skill set. The new version will be ready soon.",
 	},
 ];
 
