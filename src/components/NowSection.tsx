@@ -29,7 +29,7 @@ export default function NowSection() {
 							(2025)
 						</li>
 						<li>
-							<em>Android Mobile App Development</em> (7.5 ECTS),
+							<em>Android Mobile App Development</em>,
 							Umeå University
 						</li>
 					</ul>
