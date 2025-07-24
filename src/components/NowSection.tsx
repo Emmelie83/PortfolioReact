@@ -26,7 +26,7 @@ export default function NowSection() {
 					<ul className="list-disc list-inside space-y-1">
 						<li>
 							<em>The Complete Agentic AI Engineering Course</em>{" "}
-							(2025)
+							(2025), Udemy
 						</li>
 						<li>
 							<em>Android Mobile App Development</em>,
