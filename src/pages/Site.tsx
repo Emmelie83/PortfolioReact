@@ -8,7 +8,7 @@ import ContactSection from "../modules/Contact";
 
 export default function Site() {
   return (
-		<div>
+		<>
 			<Header />
 			<main className="max-w-screen-xl mx-auto xs:px-4 sm:px-6 lg:px-12 xl:px-16">
 				<About />
@@ -20,6 +20,6 @@ export default function Site() {
 			<div>
 				<Footer />
 			</div>
-		</div>
+		</>
   );
 }
