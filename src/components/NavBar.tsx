@@ -40,14 +40,16 @@ export default function NavBar() {
 		<header id="start" className="flex justify-center">
 			<nav className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] text-white max-w-[1800px] p-2">
 				{/* Desktop */}
-				<div className="hidden lg:flex px-10 py-2 md:gap-8 items-center justify-end uppercase">
-					<HomeLink />
-					<NavLinks
-						navSections={navSections}
-						activeSection={activeSection}
-					/>
-					<span>|</span>
-					<BlogLink />
+				<div className="hidden lg:block w-full hover:bg-[#1a1a2a] transition duration-300">
+					<div className="flex px-10 py-2 md:gap-8 items-center justify-end uppercase">
+						<HomeLink />
+						<NavLinks
+							navSections={navSections}
+							activeSection={activeSection}
+						/>
+						<span>|</span>
+						<BlogLink />
+					</div>
 				</div>
 
 				{/* Mobile Toggle */}
