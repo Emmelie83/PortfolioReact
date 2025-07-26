@@ -38,7 +38,7 @@ export default function NavBar() {
 
 	return (
 		<header id="start" className="flex justify-center">
-			<nav className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] uppercase">
+			<nav className="fixed text-md font-light top-0 w-full z-20 bg-[#10101A] uppercase text-white">
 				{/* Desktop */}
 				<div className="hidden lg:block w-full hover:bg-[#1a1a2a] transition duration-300 max-w-[1800px] mx-auto p-2">
 					<div className="flex px-10 py-2 md:gap-8 items-center justify-end">
