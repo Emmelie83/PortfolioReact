@@ -13,7 +13,7 @@ const timelineData: TimelineEntry[] = [
 		date: "2024–Ongoing",
 		title: "Software Developer Traineeship",
 		company: "Exxeta, Leipzig",
-		intro: "Six-month traineeship focused on Java and full-stack development",
+		intro: "Six-month traineeship focused on Java and full-stack development:",
 		content: [
 			"Developing applications with Java, Spring Boot, and microservices architecture",
 		],
