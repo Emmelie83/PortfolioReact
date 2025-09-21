@@ -10,8 +10,17 @@ type TimelineEntry = {
 
 const timelineData: TimelineEntry[] = [
 	{
+		date: "2024–Ongoing",
+		title: "Software Developer Traineeship",
+		company: "Exxeta, Leipzig",
+		intro: "Six-month traineeship focused on Java and full-stack development",
+		content: [
+			"Developing applications with Java, Spring Boot, and microservices architecture",
+		],
+	},
+	{
 		date: "2024–2025",
-		title: "Developer Traineeship",
+		title: "Software Developer Traineeship",
 		company: "Finatix GmbH, Leipzig",
 		intro: "Six-month traineeship focused on backend and DevOps practices:",
 		content: [
@@ -73,7 +82,7 @@ const timelineData: TimelineEntry[] = [
 ];
 
 export default function Background() {
-  return (
+	return (
 		<div id="background" className="pt-8">
 			<section>
 				<h2>Background</h2>
@@ -107,5 +116,5 @@ export default function Background() {
 			</section>
 			<hr className="border-t border-[#d5cfd1] mx-auto brightness-50" />
 		</div>
-  );
+	);
 }

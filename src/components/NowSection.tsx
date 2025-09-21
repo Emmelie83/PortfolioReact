@@ -12,10 +12,9 @@ export default function NowSection() {
 						</li>
 						<li>
 							<em>
-								AI Engineering — Building Applications with
-								Foundation Models
+								Spring Boot Up and Running
 							</em>
-							, Chip Huyen.
+							, Mark Heckler
 						</li>
 					</ul>
 				</div>
@@ -29,8 +28,8 @@ export default function NowSection() {
 							(2025), Udemy
 						</li>
 						<li>
-							<em>Android Mobile App Development</em>,
-							Umeå University
+							<em>Master Microservices with Spring Boot, Docker, Kubernetes</em>,
+							Udemy
 						</li>
 					</ul>
 				</div>
