@@ -10,7 +10,7 @@ type TimelineEntry = {
 
 const timelineData: TimelineEntry[] = [
 	{
-		date: "2024–Ongoing",
+		date: "2025–Ongoing",
 		title: "Software Developer Traineeship",
 		company: "Exxeta, Leipzig",
 		intro: "Six-month traineeship focused on Java and full-stack development:",
