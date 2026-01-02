@@ -16,8 +16,8 @@ const timelineData: TimelineEntry[] = [
 		intro: "Six-month traineeship focused on Java and full-stack development:",
 		content: [
 			"Developing applications with Java, Spring Boot, and microservices architecture",
-			"Frontend development using Angular",
-			"Collaborating in an agile team using Scrum and continuous improvement practices",
+			"Frontend testing using QF Test",
+			"Collaborating in an agile team using Scrum and Kanban",
 		],
 	},
 	{
