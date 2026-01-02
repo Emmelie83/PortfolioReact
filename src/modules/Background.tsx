@@ -16,8 +16,8 @@ const timelineData: TimelineEntry[] = [
 		intro: "Six-month traineeship focused on Java and full-stack development:",
 		content: [
 			"Developing applications with Java, Spring Boot, and microservices architecture",
-			"Frontend testing using QF Test",
-			"Collaborating in an agile team using Scrum and Kanban",
+			"Automated testing using QF-Test and AI",
+			"Collaborating in an agile teams using Scrum and Kanban",
 		],
 	},
 	{
@@ -46,9 +46,9 @@ const timelineData: TimelineEntry[] = [
 	},
 	{
 		date: "2022–2024",
-		title: "Developer Courses",
+		title: "Developer Courses (alongside Java studies)",
 		company: "Various universities in Sweden",
-		intro: "Completed university-level courses alongside my Java studies:",
+		intro: "Completed university-level courses:",
 		content: [
 			"C – University of Gothenburg",
 			"Python for Computer Linguists – University of Gothenburg",
