@@ -46,7 +46,7 @@ const timelineData: TimelineEntry[] = [
 	},
 	{
 		date: "2022–2024",
-		title: "Developer Courses (alongside Java studies)",
+		title: "Developer Studies",
 		company: "Various universities in Sweden",
 		intro: "Completed university-level courses:",
 		content: [
