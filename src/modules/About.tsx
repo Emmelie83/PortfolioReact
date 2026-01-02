@@ -3,9 +3,11 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"I’m a former translator and entrepreneur who has transitioned into software engineering, specializing in building full-stack applications with Java, Spring Boot, and React.",
-	"As a lifelong learner, I’m always exploring new technologies and deepening my skills. Recently, I’ve been diving into AI, especially how it relates to language, communication, and the kind of translation work I once did.",
-	"When I’m not coding, you’ll find me bouldering, recharging in nature, or getting lost in a good book. I also love meeting new people, so feel free to reach out on LinkedIn or send me an email. I’d be glad to connect!",
+	"In 2022, I transitioned into software engineering after more than a decade as a translator. I completed a well-renowned, hands-on Java developer program in Gothenburg, Sweden, paired with university programming courses. Sometimes I pushed myself to study at 200 percent!",
+	"Along the way, I explored Java, Python, C, databases, web design, and UX design, building a broad and versatile technical foundation. I also developed full-stack applications using Spring Boot, Vue, and various databases—some of which I showcase below.",
+  "I am now in my second internship, working with Java and Spring Boot. My focus is on writing cleaner, more efficient code and specializing in Agentic AI.",
+  "I enjoy building functional and user-friendly applications, and exploring new technologies. Each project is an opportunity to learn, grow, and contribute.",
+	"I’m always happy to connect with others in tech to share ideas and collaborate. Feel free to reach out via LinkedIn or the contact form below!",
 ];
 
 export default function About() {

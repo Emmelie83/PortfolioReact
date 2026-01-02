@@ -11,10 +11,7 @@ export default function NowSection() {
 							<em>Clean Code</em>, Robert C. Martin
 						</li>
 						<li>
-							<em>
-								Spring Boot Up and Running
-							</em>
-							, Mark Heckler
+							<em>AI Engineering</em>, Chip Huyen
 						</li>
 					</ul>
 				</div>
@@ -28,8 +25,11 @@ export default function NowSection() {
 							(2025), Udemy
 						</li>
 						<li>
-							<em>Master Microservices with Spring Boot, Docker, Kubernetes</em>,
-							Udemy
+							<em>
+								Master Microservices with Spring Boot, Docker,
+								Kubernetes
+							</em>
+							, Udemy
 						</li>
 					</ul>
 				</div>

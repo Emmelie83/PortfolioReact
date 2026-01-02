@@ -9,12 +9,12 @@ export default function Header() {
       <NavBar />
 			<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[600px] gap-10 px-4 md:px-14 lg:px-16 pt-20 md:pt-28 mb-12 sm:mb-20">
 				<img
-					className="w-[220px] sm:w-[260px] md:w-[300px] rounded-md"
+					className="w-[200px] sm:w-[220px] md:w-[240px] rounded-md"
 					src={profilePicture}
 					alt="Emmelie Johansson, Full-stack Java Developer in Leipzig"
 					loading="lazy"
-					width={300}
-					height={300}
+					width={240}
+					height={240}
 				/>
 
 				<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
