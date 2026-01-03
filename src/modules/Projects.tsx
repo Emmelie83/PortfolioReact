@@ -44,7 +44,7 @@ const projects: ProjectProps[] = [
 	{
 		title: "Thirty Dice Game",
 		image: dicegame,
-		techStack: "Kotlin · Android Studio · TypeScript · Tailwind",
+		techStack: "Kotlin · Android Studio · Material Design",
 		reverse: false,
 		variant: "mobile",
 		address: "https://github.com/Emmelie83/DiceGameThirtyAndroid",

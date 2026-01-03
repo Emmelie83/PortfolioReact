@@ -3,11 +3,11 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import NowSection from "../components/NowSection";
 
 const paragraphs = [
-	"In 2022, I transitioned into software engineering after more than a decade as a translator. Curiosity and a love of problem-solving drove me to take the leap.",
-	"I completed a hands-on Java developer program in my hometown, Gothenburg, Sweden, alongside university-level programming courses. Along the way, I built full-stack applications using Spring Boot and React or Vue, some of which I showcase below.",
-	"Currently, I’m in my second internship, working primarily with Java and Spring Boot. My focus is on writing clean, maintainable code while exploring Agentic AI.",
-	"I enjoy creating functional, user-friendly applications and discovering new technologies. Every project is an opportunity to learn and grow.",
-	"I’m always happy to connect with others in tech to exchange ideas and collaborate. Feel free to reach out via LinkedIn or the contact form below.",
+	"After more than a decade working as a translator, I took a leap into software engineering in 2022. Curiosity and a love of problem-solving led me down this new path.",
+	"I completed a hands-on Java developer program in my hometown, Gothenburg, Sweden, alongside university-level programming courses. Since then, I’ve built several full-stack applications using Spring Boot and React or Vue, some of which I showcase below.",
+	"I’m now in my second internship, working primarily with Java and Spring Boot. I focus on writing clean, maintainable code while learning about Agentic AI.",
+	"I love creating functional, user-friendly applications, and I see every project as an opportunity to learn and grow.",
+	"I’m always excited to connect with others in tech—whether it’s to swap ideas, collaborate, or just chat. Feel free to reach out via LinkedIn or the contact form below.",
 ];
 
 export default function About() {
