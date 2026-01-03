@@ -4,8 +4,7 @@ import NowSection from "../components/NowSection";
 
 const paragraphs = [
 	"In 2022, I transitioned into software engineering after more than a decade as a translator. Curiosity and a love of problem-solving drove me to take the leap.",
-	"I completed a hands-on Java developer program in my hometown, Gothenburg, Sweden, alongside university-level programming courses. I often went beyond the expected pace simply because I enjoyed it.",
-	"Along the way, I built full-stack applications using Spring Boot and React or Vue, some of which I showcase below.",
+	"I completed a hands-on Java developer program in my hometown, Gothenburg, Sweden, alongside university-level programming courses. Along the way, I built full-stack applications using Spring Boot and React or Vue, some of which I showcase below.",
 	"Currently, I’m in my second internship, working primarily with Java and Spring Boot. My focus is on writing clean, maintainable code while exploring Agentic AI.",
 	"I enjoy creating functional, user-friendly applications and discovering new technologies. Every project is an opportunity to learn and grow.",
 	"I’m always happy to connect with others in tech to exchange ideas and collaborate. Feel free to reach out via LinkedIn or the contact form below.",
