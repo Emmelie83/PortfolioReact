@@ -8,18 +8,20 @@ export interface ProjectProps {
 	techStack: string;
 	reverse?: boolean;
 	address: string;
-  description?: string;
-  liveLink?: string;
+	description?: string;
+	liveLink?: string;
+	variant?: "default" | "mobile";
 }
 
-export default function Project ({
+export default function Project({
 	title,
 	image,
 	techStack,
 	reverse,
-  address,
-  description,
-  liveLink
+	address,
+	description,
+	liveLink,
+	variant = "default",
 }: ProjectProps) {
 	return (
 		<div
@@ -27,16 +29,32 @@ export default function Project ({
 				reverse ? "lg:flex-row-reverse" : ""
 			} lg:gap-10 lg:w-full bg-[#1d1d29] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center`}>
 			{/* Image Section */}
-			<div className="md:w-3/4 lg:w-1/2 lg:py-6 xl:py-0">
-				<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
-					<div className="rounded overflow-hidden bg-white border border-gray-200">
-						<img
-							src={image}
-							alt={`Screenshot of ${title} project`}
-							className="w-full h-auto object-cover"
-						/>
+			<div className="flex lg:justify-center lg:w-1/2">
+				{variant === "mobile" ? (
+					//Phone mockup
+					<div className="w-[260px] border border-gray-300 bg-gray-100 rounded-lg p-2 shadow-md h-full">
+						<div className="bg-white border border-gray-200 rounded overflow-hidden">
+							<img
+								src={image}
+								alt={`Screenshot of ${title} project`}
+								className="p-1 w-full h-auto object-cover"
+							/>
+						</div>
 					</div>
-				</div>
+				) : (
+					//Desktop mockup
+					<div className="md:w-3/4 lg:w-full lg:py-6">
+						<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
+							<div className="rounded overflow-hidden bg-white border border-gray-200">
+								<img
+									src={image}
+									alt={`Screenshot of ${title} project`}
+									className="w-full h-auto object-cover"
+								/>
+							</div>
+						</div>
+					</div>
+				)}
 			</div>
 
 			{/* Text Section */}
@@ -57,7 +75,7 @@ export default function Project ({
 						alt="Source code on GitHub"
 					/>
 					{liveLink && (
-						<SocialIcon 
+						<SocialIcon
 							address={liveLink}
 							path={globeIcon}
 							alt="Live site"

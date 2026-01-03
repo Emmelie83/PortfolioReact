@@ -3,6 +3,7 @@ import scalacinema from "../assets/img/scalacinema.png";
 import messagesapp from "../assets/img/messagesapp.png";
 import onsight from "../assets/img/onsight.png";
 import rovarspraket from "../assets/img/rovarspraket.png";
+import dicegame from "../assets/img/dicegame.png";
 
 const projects: ProjectProps[] = [
 	{
@@ -39,6 +40,16 @@ const projects: ProjectProps[] = [
 		address: "https://github.com/Emmelie83/RobberLanguageTranslator",
 		description:
 			"Translator from Swedish into the Robber Language. I originally built this as my first JavaScript project — now I'm rebuilding it using React and TypeScript to showcase my current skill set. The new version will be ready soon.",
+	},
+	{
+		title: "Thirty Dice Game",
+		image: dicegame,
+		techStack: "Kotlin · Android Studio · TypeScript · Tailwind",
+		reverse: false,
+		variant: "mobile",
+		address: "https://github.com/Emmelie83/DiceGameThirtyAndroid",
+		description:
+			"An Android implementation of the classic Scandinavian dice game 'Thirty'. The game is developed in Kotlin using MVVM architecture, ViewModel, and LiveData for state management, and is built for modern Android devices using Jetpack libraries",
 	},
 ];
 
