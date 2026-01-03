@@ -49,7 +49,7 @@ const projects: ProjectProps[] = [
 		variant: "mobile",
 		address: "https://github.com/Emmelie83/DiceGameThirtyAndroid",
 		description:
-			"An Android implementation of the classic Scandinavian dice game 'Thirty'. The game is developed in Kotlin using MVVM architecture, ViewModel, and LiveData for state management, and is built for modern Android devices using Jetpack libraries",
+			"An Android implementation of the classic Scandinavian dice game 'Thirty'. The game is developed in Kotlin using MVVM architecture, ViewModel, and LiveData for state management.",
 	},
 ];
 
