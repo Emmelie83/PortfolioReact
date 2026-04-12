@@ -10,14 +10,25 @@ type TimelineEntry = {
 
 const timelineData: TimelineEntry[] = [
 	{
-		date: "2025–Ongoing",
+		date: "2026–ongoing",
+		title: "Junior Software Developer",
+		company: "Exxeta, Leipzig",
+		intro: "Employed as a backend software developer:",
+		content: [
+			"Developing applications with Java and Spring Boot",
+			"Building automated testing using QF-Test and Agentic AI",
+			"Collaborating in agile teams using Scrum and Kanban",
+		],
+	},
+	{
+		date: "2025–2026",
 		title: "Software Developer Traineeship",
 		company: "Exxeta, Leipzig",
 		intro: "Six-month traineeship focused on Java and full-stack development:",
 		content: [
 			"Developing applications with Java, Spring Boot, and microservices architecture",
 			"Automated testing using QF-Test and AI",
-			"Collaborating in an agile teams using Scrum and Kanban",
+			"Collaborating in agile teams using Scrum and Kanban",
 		],
 	},
 	{

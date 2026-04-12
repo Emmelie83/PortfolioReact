@@ -5,13 +5,12 @@ import NowSection from "../components/NowSection";
 const paragraphs = [
 	"After more than a decade working as a translator, I took a leap into software engineering in 2022. Curiosity and a love of problem-solving led me down this new path.",
 	"I completed a hands-on Java developer program in my hometown, Gothenburg, Sweden, alongside university-level programming courses. Since then, I’ve built several full-stack applications using Spring Boot and React or Vue, some of which I showcase below.",
-	"I’m now in my second internship, working primarily with Java and Spring Boot. I focus on writing clean, maintainable code while learning about Agentic AI.",
-	"I love creating functional, user-friendly applications, and I see every project as an opportunity to learn and grow.",
+	"I am currently working as a developer at Exxeta, focusing primarily on Java and Spring Boot. My work centers on writing clean, maintainable code while continuously expanding my knowledge, particularly in the field of Agentic AI.",
 	"I’m always excited to connect with others in tech—whether it’s to swap ideas, collaborate, or just chat. Feel free to reach out via LinkedIn or the contact form below.",
 ];
 
 export default function About() {
-  return (
+	return (
 		<div id="about" className="pt-8">
 			<section>
 				<h2>About me</h2>
@@ -37,5 +36,5 @@ export default function About() {
 			</section>
 			<hr className="border-t border-[#d5cfd1] mx-auto brightness-50" />
 		</div>
-  );
+	);
 }
