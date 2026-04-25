@@ -4,8 +4,8 @@ import NowSection from "../components/NowSection";
 
 const paragraphs = [
 	<p key="p1">
-		I’m a Junior Backend Developer at Exxeta in Leipzig, working primarily
-		with Java and Agentic AI systems.
+		I’m a Junior Backend Developer at Exxeta in Leipzig, Germany, working
+		primarily with Java and Agentic AI systems.
 	</p>,
 
 	<p key="p2">
@@ -15,20 +15,23 @@ const paragraphs = [
 	</p>,
 
 	<p key="p3">
-		Since then, I’ve focused on building backend systems in Java and
-		exploring how AI can be used to automate and streamline software
-		workflows.
+		Since then, I’ve focused on building backend systems in Java and using
+		AI to streamline software workflows. For example, I use Agentic AI to
+		automate testing in a Java Swing application, bringing modern AI
+		workflows to legacy desktop systems.
 	</p>,
-	<p key="p3">
-		I enjoy working on practical problems and turning ideas into clean,
-		functional code.
+
+	<p key="p4">
+		When I’m not coding, I enjoy bouldering, spending time in nature, and
+		reading. I’m always happy to connect with other developers—feel free to
+		reach out on LinkedIn or via the contact form below.
 	</p>,
 ];
 
 
 export default function About() {
 	return (
-		<div id="about" className="pt-8">
+		<div id="about">
 			<section>
 				<h2>About me</h2>
 				<div className="flex flex-col lg:flex-row gap-10 md:gap-20 lg:justify-between my-10">

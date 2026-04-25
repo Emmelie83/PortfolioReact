@@ -17,19 +17,22 @@ export default function Header() {
 					height={240}
 				/>
 
-				<div className="flex flex-col gap-8 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
+				<div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
 					<div>
-						<p className="text-lg sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[22px] leading-tight">
+						<p className="text-[20px] md:text-[22px] text-[#E0E0E0] max-w-xl leading-relaxed">
 							Hi, I'm
 						</p>
-						<h1 className="leading-tight">Emmelie Johansson</h1>
-						<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[22px] leading-tight mt-1">
-							a Junior Backend Developer working with Java and
-							Agentic AI.
+						<h1 className="text-[42px] md:text-[56px] font-bold leading-tight tracking-normal normal-case">
+							Emmelie Johansson
+						</h1>
+
+						<p className="mt-3 text-[20px] md:text-[22px] text-[#E0E0E0] max-w-xl leading-relaxed">
+							a Junior Backend Developer specialising in Java and Agentic
+							AI
 						</p>
 					</div>
 
-					<div className="flex gap-2.5 md:gap-4 lg:my-3">
+					<div className="flex gap-2.5 md:gap-4 lg:my-2">
 						<Button
 							address="#projects"
 							buttonText="See what I’ve built"
@@ -40,7 +43,7 @@ export default function Header() {
 							buttonText="Drop a Message"
 						/>
 					</div>
-					<div className="mt-2">
+					<div className="mt-1">
 						<SocialIcons />
 					</div>
 				</div>

@@ -24,19 +24,10 @@ const projects: ProjectProps[] = [
 			"A group-developed messages app with GitHub OAuth2 login. Features include public and private message visibility, multilingual support (EN/SV) via external translation, and API documentation powered by Swagger.",
 	},
 	{
-		title: "Climbing trips website",
-		image: onsight,
-		techStack: "HTML · CSS · JavaScript · Figma · Weather API",
-		address: "https://github.com/Emmelie83/webbapp_labb1",
-		liveLink: "https://climbingtripswebsite.netlify.app/",
-		description:
-			"A responsive website for planning and showcasing climbing trips. Designed in Figma and built with vanilla HTML, CSS, and JavaScript, it features dynamic weather data integration via a public Weather API.",
-	},
-	{
 		title: "Translation app",
 		image: rovarspraket,
 		techStack: "React · Vite · TypeScript · Tailwind",
-		reverse: true,
+		reverse: false,
 		address: "https://github.com/Emmelie83/RobberLanguageTranslator",
 		description:
 			"Translator from Swedish into the Robber Language. I originally built this as my first JavaScript project — now I'm rebuilding it using React and TypeScript to showcase my current skill set. The new version will be ready soon.",
