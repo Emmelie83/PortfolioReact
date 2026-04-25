@@ -1,7 +1,6 @@
 import Project, { type ProjectProps } from "../components/Project";
 import scalacinema from "../assets/img/scalacinema.png";
 import messagesapp from "../assets/img/messagesapp.png";
-import onsight from "../assets/img/onsight.png";
 import rovarspraket from "../assets/img/rovarspraket.png";
 import dicegame from "../assets/img/dicegame.png";
 
