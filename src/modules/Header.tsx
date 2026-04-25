@@ -5,13 +5,13 @@ import NavBar from "../components/NavBar";
 
 export default function Header() {
 	return (
-    <div id="home" className="pt-10">
-      <NavBar />
+		<div id="home" className="pt-10">
+			<NavBar />
 			<header className="flex flex-col lg:flex-row items-center justify-center max-w-screen-xl mx-auto lg:h-[600px] gap-10 px-4 md:px-14 lg:px-16 pt-20 md:pt-28 mb-12 sm:mb-20">
 				<img
 					className="w-[200px] sm:w-[220px] md:w-[240px] rounded-md"
 					src={profilePicture}
-					alt="Emmelie Johansson, Full-stack Java Developer in Leipzig"
+					alt="Emmelie Johansson, a Java Developer in Leipzig"
 					loading="lazy"
 					width={240}
 					height={240}
@@ -24,8 +24,8 @@ export default function Header() {
 						</p>
 						<h1 className="leading-tight">Emmelie Johansson</h1>
 						<p className="text-lg sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[22px] leading-tight mt-1">
-							a full-stack Java developer based in Leipzig,
-							Germany.
+							a Junior Backend Developer working with Java and
+							Agentic AI.
 						</p>
 					</div>
 
@@ -39,10 +39,10 @@ export default function Header() {
 							address="#contact"
 							buttonText="Drop a Message"
 						/>
-          </div>
-          <div className="mt-2">
-            <SocialIcons />
-          </div>
+					</div>
+					<div className="mt-2">
+						<SocialIcons />
+					</div>
 				</div>
 			</header>
 		</div>

@@ -8,9 +8,6 @@ export default function NowSection() {
 					</p>
 					<ul className="list-disc list-inside space-y-1">
 						<li>
-							<em>Clean Code</em>, Robert C. Martin
-						</li>
-						<li>
 							<em>AI Engineering</em>, Chip Huyen
 						</li>
 					</ul>
@@ -23,13 +20,6 @@ export default function NowSection() {
 						<li>
 							<em>The Complete Agentic AI Engineering Course</em>{" "}
 							(2025), Udemy
-						</li>
-						<li>
-							<em>
-								Master Microservices with Spring Boot, Docker,
-								Kubernetes
-							</em>
-							, Udemy
 						</li>
 					</ul>
 				</div>

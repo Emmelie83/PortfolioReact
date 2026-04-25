@@ -60,6 +60,10 @@ section {
   padding: 3.5rem 1rem;
 }
 
+a {
+  display: inline;
+}
+
 html {
   scroll-behavior: smooth;
 }
