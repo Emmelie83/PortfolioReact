@@ -25,45 +25,48 @@ export default function Project({
 }: ProjectProps) {
 	return (
 		<div
-			className={`flex flex-col lg:flex-row lg:items-center ${
+			className={`flex flex-col lg:flex-row ${
 				reverse ? "lg:flex-row-reverse" : ""
 			} lg:gap-10 lg:w-full bg-[#1d1d29] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center`}>
 			{/* Image Section */}
 			<div className="flex lg:justify-center lg:w-1/2">
-				{variant === "mobile" ? (
-					//Phone mockup
-					<div className="w-[260px] border border-gray-300 bg-gray-100 rounded-lg p-2 shadow-md h-full">
-						<div className="bg-white border border-gray-200 rounded overflow-hidden">
-							<img
-								src={image}
-								alt={`Screenshot of ${title} project`}
-								className="p-1 w-full h-auto object-cover"
-							/>
-						</div>
-					</div>
-				) : (
-					//Desktop mockup
-					<div className="md:w-3/4 lg:w-full lg:py-6">
-						<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
-							<div className="rounded overflow-hidden bg-white border border-gray-200">
+				{
+					variant === "mobile" ?
+						//Phone mockup
+						<div className="w-[260px] border border-gray-300 bg-gray-100 rounded-lg p-2 shadow-md h-full">
+							<div className="bg-white border border-gray-200 rounded overflow-hidden">
 								<img
 									src={image}
 									alt={`Screenshot of ${title} project`}
-									className="w-full h-auto object-cover"
+									className="p-1 w-full h-auto object-cover"
 								/>
 							</div>
 						</div>
-					</div>
-				)}
+						//Desktop mockup
+					:	<div className="md:w-3/4 lg:w-full lg:py-6">
+							<div className="border border-gray-300 rounded-lg p-2 bg-gray-100 shadow-md h-full">
+								<div className="rounded overflow-hidden bg-white border border-gray-200">
+									<img
+										src={image}
+										alt={`Screenshot of ${title} project`}
+										className="w-full h-auto object-cover"
+									/>
+								</div>
+							</div>
+						</div>
+
+				}
 			</div>
 
 			{/* Text Section */}
 			<div className="order-1 md:order-2 md:w-3/4 lg:w-1/2 flex flex-col">
-				<h3>{title}</h3>
-				<p id="tech-stack">{techStack}</p>
+				<h3 className="lg:pt-8">{title}</h3>
+				<p id="tech-stack" className="mt-2">
+					{techStack}
+				</p>
 
 				{description && (
-					<div className="mt-2 lg:mt-1.5 mb-1 lg:mb-1 lg:w-full lg:max-w-[800px] xl:w-9/10">
+					<div className="mt-4 mb-1 lg:mb-1 lg:w-full lg:max-w-[800px] xl:w-9/10">
 						{description}
 					</div>
 				)}

@@ -11,7 +11,7 @@ const projects: ProjectProps[] = [
 		techStack: "Java · Spring Boot · Vue.js · MongoDB · TMDB API",
 		address: "https://github.com/Emmelie83/CinemaGroupProject",
 		description:
-			"A group-built cinema ticket reservation app. Users can browse movies, select seats, and manage bookings via personal profiles. Admins can fetch movies from The Movie Database (TMDB), and manage movie schedules.",
+			"Full-stack Java backend system with external API integration and booking workflow management.",
 	},
 	{
 		title: "Messages Forum App",
@@ -20,16 +20,7 @@ const projects: ProjectProps[] = [
 		reverse: true,
 		address: "https://github.com/Emmelie83/springBootGroupProject",
 		description:
-			"A group-developed messages app with GitHub OAuth2 login. Features include public and private message visibility, multilingual support (EN/SV) via external translation, and API documentation powered by Swagger.",
-	},
-	{
-		title: "Translation app",
-		image: rovarspraket,
-		techStack: "React · Vite · TypeScript · Tailwind",
-		reverse: false,
-		address: "https://github.com/Emmelie83/RobberLanguageTranslator",
-		description:
-			"Translator from Swedish into the Robber Language. I originally built this as my first JavaScript project — now I'm rebuilding it using React and TypeScript to showcase my current skill set. The new version will be ready soon.",
+			"Secure backend system with authentication, multilingual support, and API documentation.",
 	},
 	{
 		title: "Thirty Dice Game",

@@ -1,17 +1,23 @@
 import SocialIcon from "./SocialIcon";
 import githubIcon from "../assets/icons/github.svg";
+import huggingFaceIcon from "../assets/icons/huggingface.svg";
 import linkedinIcon from "../assets/icons/linkedin.svg";
 
 const icons = [
+	{
+		address: "https://www.linkedin.com/in/emmeliejohansson/",
+		path: linkedinIcon,
+		alt: "LinkedIn Profile",
+	},
 	{
 		address: "https://github.com/Emmelie83",
 		path: githubIcon,
 		alt: "GitHub Profile",
 	},
 	{
-		address: "https://www.linkedin.com/in/emmeliejohansson/",
-		path: linkedinIcon,
-		alt: "LinkedIn Profile",
+		address: "https://huggingface.co/Emi83",
+		path: huggingFaceIcon,
+		alt: "Hugging Face Profile",
 	},
 ];
 

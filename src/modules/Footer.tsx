@@ -1,4 +1,3 @@
-import SocialIcons from "../components/SocialIcons";
 import { ChevronsUp } from "lucide-react";
 
 export default function Footer() {
@@ -8,13 +7,12 @@ export default function Footer() {
 			<a href="#home" className="flex flex-col items-center text-accent">
 				<ChevronsUp size={40} strokeWidth={1} />
 			</a>
-			<p className="text-sm lg:text-md mb-4">
+			<p>
 				Copyright © {year} Emmelie Johansson
 			</p>
-			<p className="text-sm lg:text-md mb-4">
+			<p className="text-md mb-4">
 				Built with React and lots of ☕
 			</p>
-			<SocialIcons />
 		</footer>
   );
 }

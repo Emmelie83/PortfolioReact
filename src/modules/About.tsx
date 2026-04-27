@@ -23,7 +23,7 @@ const paragraphs = [
 
 	<p key="p4">
 		When I’m not coding, I enjoy bouldering, spending time in nature, and
-		reading. I’m always happy to connect with other developers—feel free to
+		reading. I’m always happy to connect with other developers — feel free to
 		reach out on LinkedIn or via the contact form below.
 	</p>,
 ];

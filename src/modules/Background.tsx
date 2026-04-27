@@ -13,7 +13,7 @@ const timelineData: TimelineEntry[] = [
 		date: "2026–ongoing",
 		title: "Junior Backend Developer",
 		company: "Exxeta, Leipzig",
-		intro: "Developing Java/Spring Boot applications, automated testing systems, and exploring Agentic AI for software workflows in agile teams (Scrum, Kanban).",
+		intro: "Developing Java/Spring Boot applications, automated testing systems, and exploring Agentic AI.",
 		content: [],
 	},
 	{
