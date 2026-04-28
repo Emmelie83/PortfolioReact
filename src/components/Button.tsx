@@ -14,10 +14,10 @@ export default function Button({
 	newTab = false,
 }: ButtonProps) {
 	const baseClasses =
-		"inline-block uppercase px-4 py-3 md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer hover:scale-110 transition duration-200";
+		"inline-block uppercase px-4 py-3 md:px-6 md:py-3 md:text-lg rounded-md cursor-pointer hover:scale-110 transition duration-200 shadow-[0_0_25px_rgba(184,122,139,0.4)]";
 
 	const variantClasses = {
-		accent: "bg-[#d392a0] border lg:border-2 border-[#D3929F]",
+		accent: "bg-[#b87a8b] border lg:border-2 border-[#b87a8b]",
 		transparent: "border lg:border-2",
 	}[variant];
 

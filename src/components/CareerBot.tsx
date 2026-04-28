@@ -3,7 +3,6 @@ import { MessageCircle } from "lucide-react";
 
 export default function CareerBot() {
   const [open, setOpen] = useState(false);
-  const [hasOpenedOnce, setHasOpenedOnce] = useState(false);
 
   useEffect(() => {
     const handler = () => setOpen(true);
@@ -12,9 +11,6 @@ export default function CareerBot() {
     return () => window.removeEventListener("open-career-bot", handler);
   }, []);
 
-  useEffect(() => {
-    if (open) setHasOpenedOnce(true);
-  }, [open]);
 
   return (
     <>
@@ -23,12 +19,16 @@ export default function CareerBot() {
         onClick={() => setOpen(true)}
         className="
 fixed bottom-6 right-6 z-50
-w-14 h-14 rounded-full
-bg-[#d392a0]
+w-14 h-14
 flex items-center justify-center
+rounded-full
+bg-[#b87a8b]
+cursor-pointer
+hover:scale-110
+transition duration-200
 shadow-lg
-hover:scale-105 hover:shadow-xl
-transition-all duration-300 ease-out
+ring-2 ring-white/30
+shadow-[0_0_25px_rgba(184,122,139,0.4)]
 "
 
       >
@@ -37,7 +37,7 @@ transition-all duration-300 ease-out
 
       {/* Backdrop */}
       <div
-        className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-black/40 backdrop-blur-md z-40 transition-opacity duration-300 ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setOpen(false)}
@@ -59,11 +59,12 @@ transition-all duration-300 ease-out
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-[#d392a0] rounded-full" />
+            <div className="w-2 h-2 bg-[#b87a8b] rounded-full" />
             <p className="text-white/90 tracking-wide font-light">
   Career Assistant
 </p>
           </div>
+          
 
           <button
             onClick={() => setOpen(false)}
