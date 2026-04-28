@@ -3,6 +3,9 @@ import profilePicture from "../assets/img/profile-picture.webp";
 import Button from "../components/Button";
 import NavBar from "../components/NavBar";
 
+
+
+
 export default function Header() {
 	return (
 		<div id="home" className="pt-10">
@@ -16,6 +19,7 @@ export default function Header() {
 					width={240}
 					height={240}
 				/>
+
 
 				<div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-left w-full lg:w-2/3">
 					<div>
@@ -32,6 +36,8 @@ export default function Header() {
 						</p>
 					</div>
 
+
+
 					<div className="flex gap-2.5 md:gap-4 lg:my-2">
 						<Button
 							address="#projects"
@@ -42,6 +48,7 @@ export default function Header() {
 							address="#contact"
 							buttonText="Drop a Message"
 						/>
+
 					</div>
 					<div className="mt-1">
 						<SocialIcons />
