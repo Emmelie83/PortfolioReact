@@ -7,13 +7,13 @@ import mongoDBIcon from "../assets/icons/mongodb.svg";
 import reactIcon from "../assets/icons/react.svg";
 import thymeleafIcon from "../assets/icons/thymeleaf.svg";
 import typescriptIcon from "../assets/icons/typescript.svg";
-import huggingfaceIcon from "../assets/icons/huggingface.svg";
 import dockerIcon from "../assets/icons/docker.svg";
 import copilotIcon from "../assets/icons/githubcopilot.svg";
 import pythonIcon from "../assets/icons/python.svg";
 import postmanIcon from "../assets/icons/postman.svg";
+import openaiIcon from "../assets/icons/openai.svg";
 import n8nIcon from "../assets/icons/n8n.svg";
-import langChainIcon from "../assets/icons/langchain.svg";
+import langGraphIcon from "../assets/icons/langgraph.svg";
 import kotlinIcon from "../assets/icons/kotlin.svg";
 import springSecurityIcon from "../assets/icons/springsecurity.svg";
 
@@ -37,8 +37,8 @@ const skills = [
 		{ icon: postmanIcon, label: "Postman" },
 	],
 	[
-		{ icon: huggingfaceIcon, label: "Hugging Face" },
-		{ icon: langChainIcon, label: "LangChain" },
+		{ icon: openaiIcon, label: "OpenAI Agents SDK" },
+		{ icon: langGraphIcon, label: "LangGraph" },
 		{ icon: n8nIcon, label: "n8n" },
 		{ icon: copilotIcon, label: "GitHub Copilot" },
 	],
