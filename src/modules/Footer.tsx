@@ -10,7 +10,7 @@ export default function Footer() {
 			<p>
 				Copyright © {year} Emmelie Johansson
 			</p>
-			<p className="text-md mb-4">
+			<p className="text-sm mb-4">
 				Built with React and lots of ☕
 			</p>
 		</footer>

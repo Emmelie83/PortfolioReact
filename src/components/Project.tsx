@@ -27,7 +27,7 @@ export default function Project({
 		<div
 			className={`flex flex-col lg:flex-row ${
 				reverse ? "lg:flex-row-reverse" : ""
-			} lg:gap-10 lg:w-full bg-[#1d1d29] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center`}>
+			} lg:gap-10 lg:w-full bg-[#1d1d29] my-10 px-2 py-6 sm:p-6 md:p-8 lg:px-4 lg:py-8 xl:p-10 rounded-xl justify-center h-full`}>
 			{/* Image Section */}
 			<div className="flex lg:justify-center lg:w-1/2">
 				{
@@ -60,7 +60,7 @@ export default function Project({
 
 			{/* Text Section */}
 			<div className="order-1 md:order-2 md:w-3/4 lg:w-1/2 flex flex-col">
-				<h3 className="lg:pt-8">{title}</h3>
+				<h3 className="lg:pt-6">{title}</h3>
 				<p id="tech-stack" className="mt-2">
 					{techStack}
 				</p>
@@ -71,7 +71,7 @@ export default function Project({
 					</div>
 				)}
 
-				<div className="flex gap-4 md:gap-6 my-4 lg:mt-4 xl:mt-6">
+				<div className="flex mt-auto gap-4 md:gap-6 my-4 lg:mt-6 xl:mt-8">
 					<SocialIcon
 						address={address}
 						path={githubIcon}

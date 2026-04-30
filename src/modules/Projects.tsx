@@ -1,7 +1,6 @@
 import Project, { type ProjectProps } from "../components/Project";
 import scalacinema from "../assets/img/scalacinema.png";
 import messagesapp from "../assets/img/messagesapp.png";
-import dicegame from "../assets/img/dicegame.png";
 
 const projects: ProjectProps[] = [
 	{
@@ -21,23 +20,13 @@ const projects: ProjectProps[] = [
 		description:
 			"Secure backend system with authentication, multilingual support, and API documentation.",
 	},
-	{
-		title: "Thirty Dice Game",
-		image: dicegame,
-		techStack: "Kotlin · Android Studio · Material Design",
-		reverse: false,
-		variant: "mobile",
-		address: "https://github.com/Emmelie83/DiceGameThirtyAndroid",
-		description:
-			"An Android implementation of the classic Scandinavian dice game 'Thirty'. The game is developed in Kotlin using MVVM architecture, ViewModel, and LiveData for state management.",
-	},
 ];
 
 export default function Projects() {
 	return (
 		<div id="projects" className="pt-8">
 			<section>
-				<h2>My Projects</h2>
+				<h2>Featured Projects</h2>
 				<div className="my-10">
 					{projects.map((project) => (
 						<Project key={project.title} {...project} />
