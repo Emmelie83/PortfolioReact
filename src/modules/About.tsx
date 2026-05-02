@@ -10,15 +10,13 @@ const paragraphs = [
 
 	<p key="p2">
 		Before moving into tech, I worked for over a decade as a translator. In
-		2022, I transitioned into software engineering driven by a strong desire
-		to grow and learn something new.
+		2022, I transitioned into software engineering because I was ready for a new challenge andwanted to learn something new.
 	</p>,
 
 	<p key="p3">
 		Since then, I’ve focused on building backend systems in Java and using
 		AI to streamline software workflows. For example, I use Agentic AI to
-		automate testing in a Java Swing application, bringing modern AI
-		workflows to legacy desktop systems.
+		automate testing in an older Java Swing application.
 	</p>,
 
 	<p key="p4">
